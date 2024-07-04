@@ -1,5 +1,5 @@
 # BasicLabIoT物联网平台
-![BasicLabLogo.png](images/BasicLabLogo.png)
+![BasicLabLogo.png](images/BasicLabLogo.png =300x300)
 
 ![GitEE stars](https://gitee.com/vegetable-chicken-blog/basiclab-iot/badge/star.svg)
 ![GitEE forks](https://gitee.com/vegetable-chicken-blog/basiclab-iot/badge/fork.svg)
