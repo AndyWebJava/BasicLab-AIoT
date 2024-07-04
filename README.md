@@ -13,71 +13,55 @@
 ### BasicLab全产品体系层次架构图
 ![BasicLab全产品体系层次架构图.jpg](images/BasicLab全产品体系层次架构图.jpg)
 
-## 简介
+## Introduction
 
-[BasicLabIoT物联网平台] BasicLabIoT物联网平台作为BasicLab基础架构实验室众多产品中的一员，它是一个基于SpringBoot与SpringCloud构建的开源物联网云平台，旨在为设备连接、数据采集、处理与分析提供一站式解决方案。本项目采用PostgreSQL作为关系型数据库存储核心数据，并遵循Apache 2.0许可协议，鼓励社区贡献与商业友好使用。
+BasicLabIoT Platform is one of the many products in the BasicLab Infrastructure Laboratory. It is an open-source IoT cloud platform built on SpringBoot and SpringCloud, aiming to provide a one-stop solution for device connectivity, data collection, processing, and analysis. This project uses PostgreSQL as a relational database to store core data and follows the Apache 2.0 license agreement, encouraging community contribution and business friendly use.
 
-## 技术栈
-1、采用前后端分离的模式，前端框架REACT。
+## Technology stack
+-- Adopting a front-end and back-end separation mode, the front-end framework REACT.
+-- The backend adopts Spring Boot Spring Cloud & Alibaba。
+-- The device gateway is based on Emqx Netty、Reactor3、Reactor-netty。
+-- Choose Nacos for registration center and configuration center, and use Redis for permission authentication.
+-- Select Sentinel for flow control framework and Seata for distributed transactions.
+-- The temporal database adopts TDengine's open-source and efficient IoT big data platform to handle massive IoT data writing and load queries.
 
-2、后端采用Spring Boot、Spring Cloud & Alibaba。
+## Function List
+-- System management: user management, role management, menu management, department management, position management, dictionary management, parameter setting, notification and announcement, log management
+-- System monitoring: online users, scheduled tasks, Sentinel console, Nacos console, Admin console, task scheduling management
+-- System tools: form construction, code generation, system interfaces
+-- Device integration: device management, sub device management, product management, protocol management, rule engine, object model
+-- Streaming media: national standard cascading, streaming equipment, split screen monitoring, channel management, push streaming, pull streaming, SIP signaling services (added to knowledge planet acquisition)
+-- Rule engine message forwarding: supports KAFKA nodes, HTTP nodes, PREDICATE nodes, ROCKET-MQ nodes, RABBIT-MQ nodes, MYSQL nodes, MQTT nodes, TOPIC nodes, and LOG nodes (added to knowledge planet acquisition)
 
-3、设备网关基于Emqx、Netty、Reactor3、Reactor-netty。
+## Technology stack
+- Backend: SpringBoot, SpringCloud
+- Database: PostgreSQL
+- Protocol: HTTP/HTTPS/MQTT/ModBus/SIP
+- License: Apache License 2.0
 
-4、注册中心、配置中心选型Nacos，权限认证使用Redis。
-
-5、流量控制框架选型Sentinel，分布式事务选型Seata。
-
-6、时序数据库采用TDengine开源、高效的物联网大数据平台、处理物联网海量数据写入与负载查询。
-
-## 功能列表
-
--- 系统管理：用户管理、角色管理、菜单管理、部门管理、岗位管理、字典管理、参数设置、通知公告、日志管理
-
--- 系统监控：在线用户、定时任务、Sentinel控制台、Nacos控制台、Admin控制台、任务调度管理
-
--- 系统工具：表单构建、代码生成、系统接口
-
--- 设备集成：设备管理、子设备管理、产品管理、协议管理、规则引擎、物模型
-
--- 流媒体：国标级联、流媒体设备、分屏监控、通道管理、推流、拉流、SIP信令服务（加入知识星球获取）
-
--- 规则引擎消息转发：支持KAFKA节点、HTTP节点、PREDICATE节点、ROCKET_MQ节点、RABBIT_MQ节点、MYSQL节点、MQTT节点、TOPIC节点、LOG节点（加入知识星球获取）
-
-## 技术栈
-
-- 后端：SpringBoot, SpringCloud
-- 数据库：PostgreSQL
-- 协议：HTTP/HTTPS
-- 许可证：Apache License 2.0
-
-## 环境需求
+## Environmental requirements
 - Java 8+
 - Maven 3.6+
 - PostgreSQL 13+
 
-## 商务合作
-### 如需了解更多关于专业版源码或寻求商务合作，可以通过以下方式联系我
-- 微信：Miczhang88
-- 邮箱：andywebjava@163.com
+## Business cooperation
+### If you need to learn more about the professional version source code or seek business cooperation, you can contact me through the following methods
+- WeChat: Miczhang88
+- Email: andywebjava@163.com
 
-## 文档与支持
-### 文档包含详细的开发指南、API文档及部署教程
-### 流媒体、规则引擎功能模块源码，加入星球三天后联系我，拉你入群获取这部分的源码（星球三天内不满意可退费，白嫖三天文档也是可以的）
+##Documents and Support
+###The document contains detailed development guides, API documentation, and deployment tutorials
+###Source code for streaming media and rule engine function modules. After joining the planet for three days, please contact me and invite you to join the group to obtain the source code for this part (if you are not satisfied with the planet within three days, you can get a refund, and you can also pay for documents for three days in vain)
 ![img.png](images/知识星球.png)
 
-## issues(欢迎大家提出宝贵意见)
-
+## issues(Welcome everyone to provide valuable feedback)
 [issues](https://github.com/AndyWebJava/basiclab-iot/issues)
 
-## 欢迎提交 pr
-
+## Welcome to submit PR
 [pr->feat/contrbute](https://github.com/AndyWebJava/basiclab-iot/pulls)
 
-## License(开源协议)
-
+## License (Open Source Protocol)
 [Apache License, Version 2.0](LICENSE)
 
-## 版权使用说明
-
-ThingLinks开源平台遵循 [Apache License, Version 2.0](LICENSE) 协议。 允许商业使用，但务必保留类作者、Copyright 信息。
+## Copyright usage instructions
+The BasicLabIoT IoT platform follows the Apache License, Version 2.0 (LICENSE) protocol. Commercial use is allowed, but class author and copyright information must be retained.
