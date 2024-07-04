@@ -22,7 +22,7 @@
 BasicLabIoT Platform is one of the many products in the BasicLab Infrastructure Laboratory. It is an open-source IoT cloud platform built on SpringBoot and SpringCloud, aiming to provide a one-stop solution for device connectivity, data collection, processing, and analysis. This project uses PostgreSQL as a relational database to store core data and follows the Apache 2.0 license agreement, encouraging community contribution and business friendly use.
 
 ## Technology stack
--- Adopting a front-end and back-end separation mode, the front-end framework REACT.
+-- Adopting a front-end and back-end separation mode, the front-end framework VUE.
 -- The backend adopts Spring Boot Spring Cloud & Alibaba。
 -- The device gateway is based on Emqx Netty、Reactor3、Reactor-netty。
 -- Choose Nacos for registration center and configuration center, and use Redis for permission authentication.

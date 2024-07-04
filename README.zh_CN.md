@@ -22,7 +22,7 @@
 BasicLabIoT物联网平台作为BasicLab基础架构实验室众多产品中的一员，它是一个基于SpringBoot与SpringCloud构建的开源物联网云平台，旨在为设备连接、数据采集、处理与分析提供一站式解决方案。本项目采用PostgreSQL作为关系型数据库存储核心数据，并遵循Apache 2.0许可协议，鼓励社区贡献与商业友好使用。
 
 ## 技术栈
-1、采用前后端分离的模式，前端框架REACT。
+1、采用前后端分离的模式，前端框架VUE。
 
 2、后端采用Spring Boot、Spring Cloud & Alibaba。
 
