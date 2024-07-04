@@ -3,10 +3,12 @@
     <img src="images/BasicLabLogo.png" width="50%" height="50%" alt="BasicLabLogo">
 </div>
 
-![GitEE stars](https://gitee.com/vegetable-chicken-blog/basiclab-iot/badge/star.svg)
-![GitEE forks](https://gitee.com/vegetable-chicken-blog/basiclab-iot/badge/fork.svg)
-![GitEE version](https://img.shields.io/badge/version-v1.0-brightgreen.svg)
-![GitEE license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+<div align="center">
+    <img src="https://gitee.com/vegetable-chicken-blog/basiclab-iot/badge/star.svg" alt="GitEE stars">
+    <img src="https://gitee.com/vegetable-chicken-blog/basiclab-iot/badge/fork.svg" alt="GitEE forks">
+    <img src="https://img.shields.io/badge/version-v1.0-brightgreen.svg" alt="GitEE version">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="GitEE license">
+</div>
 
 ### BasicLabIoT架构图
 ![BasicLabIoT物联网平台架构.jpg](images/BasicLabIoT物联网平台架构.jpg)
