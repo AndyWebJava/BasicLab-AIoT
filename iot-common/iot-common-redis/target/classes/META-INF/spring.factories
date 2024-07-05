@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.basiclab.iot.common.redis.configure.RedisConfig,\
+  com.basiclab.iot.common.redis.service.RedisService
+
+  

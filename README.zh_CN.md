@@ -1,6 +1,6 @@
 # BasicLabIoT物联网平台
 <div align="center">
-    <img src="images/BasicLabLogo.png" width="50%" height="50%" alt="BasicLabLogo">
+    <img src="doc/images/BasicLabLogo.png" width="50%" height="50%" alt="BasicLabLogo">
 </div>
 
 <div align="center">
@@ -11,11 +11,11 @@
 </div>
 
 ### BasicLabIoT架构图
-![BasicLabIoT物联网平台架构.jpg](images/BasicLabIoT物联网平台架构.jpg)
-![BasicLabIoT物联网平台设备接入流程.jpg](images/BasicLabIoT物联网平台设备接入流程.jpg)
+![BasicLabIoT物联网平台架构.jpg](doc/images/BasicLabIoT物联网平台架构.jpg)
+![BasicLabIoT物联网平台设备接入流程.jpg](doc/images/BasicLabIoT物联网平台设备接入流程.jpg)
 
 ### BasicLab全产品体系层次架构图
-![BasicLab全产品体系层次架构图.jpg](images/BasicLab全产品体系层次架构图.jpg)
+![BasicLab全产品体系层次架构图.jpg](doc/images/BasicLab全产品体系层次架构图.jpg)
 
 ## 简介
 
@@ -67,7 +67,7 @@ BasicLabIoT物联网平台作为BasicLab基础架构实验室众多产品中的�
 
 ## 文档与支持
 知识星球文档包含详细的开发指南、API文档及部署教程，同时包含流媒体、规则引擎功能模块的源码，加入星球三天后联系我，拉你入群获取这部分的源码（星球三天内不满意可退费，白嫖三天文档也是可以的）
-![img.png](images/知识星球.png)
+![img.png](doc/images/知识星球.png)
 
 ## issues(欢迎大家提出宝贵意见)
 

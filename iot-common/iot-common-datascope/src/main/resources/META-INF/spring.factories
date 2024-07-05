@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.basiclab.iot.common.datascope.aspect.DataScopeAspect
+
+  

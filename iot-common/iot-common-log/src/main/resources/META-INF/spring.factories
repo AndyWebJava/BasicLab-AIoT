@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.basiclab.iot.common.log.service.AsyncLogService,\
+  com.basiclab.iot.common.log.aspect.LogAspect

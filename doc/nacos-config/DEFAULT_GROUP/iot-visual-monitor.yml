@@ -1,0 +1,14 @@
+# Tomcat
+server:
+  port: 19400
+
+# spring配置
+spring: 
+  security:
+    user:
+      name: basiclabiot
+      password: 123456
+  boot:
+    admin:
+      ui:
+        title: basiclabiot服务状态监控

@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.basiclab.iot.link.api.factory.RemoteDeviceFallbackFactory,\
+  com.basiclab.iot.link.api.factory.RemoteCacheOpenAnyFallbackFactory, \
+  com.basiclab.iot.link.api.factory.RemoteDeviceOpenAnyFallbackFactory, \
+  com.basiclab.iot.link.api.factory.RemoteDeviceActionFallbackFactory, \
+  com.basiclab.iot.link.api.factory.RemoteDeviceDatasFallbackFactory, \
+  com.basiclab.iot.link.api.factory.RemoteProtocolFallbackFactory,\
+  com.basiclab.iot.link.api.factory.RemoteDeviceInfoFallbackFactory,\
+  com.basiclab.iot.link.api.factory.RemoteProductFallbackFactory

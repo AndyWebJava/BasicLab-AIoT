@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.basiclab</groupId>
+        <artifactId>iot-common</artifactId>
+        <version>${iot.version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>iot-common-security</artifactId>
+
+    <description>
+        iot-common-security安全模块
+    </description>
+
+    <dependencies>
+    
+        <!-- basiclabiot Api System -->
+        <dependency>
+            <groupId>com.basiclab</groupId>
+            <artifactId>iot-api-system</artifactId>
+            <version>${iot.version}</version>
+        </dependency>
+        
+        <!-- basiclabiot Common Redis-->
+        <dependency>
+            <groupId>com.basiclab</groupId>
+            <artifactId>iot-common-redis</artifactId>
+            <version>${iot.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

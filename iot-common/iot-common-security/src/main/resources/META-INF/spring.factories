@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.basiclab.iot.common.security.service.TokenService,\
+  com.basiclab.iot.common.security.aspect.PreAuthorizeAspect,\
+  com.basiclab.iot.common.security.aspect.InnerAuthAspect,\
+  com.basiclab.iot.common.security.handler.GlobalExceptionHandler

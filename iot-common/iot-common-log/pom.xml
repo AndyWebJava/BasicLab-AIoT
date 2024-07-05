@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.basiclab</groupId>
+        <artifactId>iot-common</artifactId>
+        <version>${iot.version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>iot-common-log</artifactId>
+	
+    <description>
+        iot-common-log日志记录
+    </description>
+
+    <dependencies>
+		
+        <!-- basiclabiot Common Security -->
+        <dependency>
+            <groupId>com.basiclab</groupId>
+            <artifactId>iot-common-security</artifactId>
+            <version>${iot.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.logstash.logback/logstash-logback-encoder -->
+        <!--<dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>7.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>-->
+       <!--  https://mvnrepository.com/artifact/org.springframework.data/spring-data-elasticsearch
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>4.4.2</version>
+        </dependency>-->
+
+
+    </dependencies>
+</project>

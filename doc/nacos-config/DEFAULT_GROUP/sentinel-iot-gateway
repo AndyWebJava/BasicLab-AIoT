@@ -1,0 +1,66 @@
+[
+    {
+        "resource": "iot-auth",
+        "count": 500,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-system",
+        "count": 1000,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-gen",
+        "count": 200,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-job",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-tdengine",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-link",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-broker",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    },
+	{
+        "resource": "iot-modules-protocolAnalysis",
+        "count": 300,
+        "grade": 1,
+        "limitApp": "default",
+        "strategy": 0,
+        "controlBehavior": 0
+    }
+]

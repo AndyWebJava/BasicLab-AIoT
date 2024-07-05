@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.basiclab</groupId>
+        <artifactId>basiclab-iot</artifactId>
+        <version>${iot.version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>iot-modules-system</module>
+        <module>iot-modules-gen</module>
+        <module>iot-modules-job</module>
+        <module>iot-modules-file</module>
+        <module>iot-modules-tdengine</module>
+        <module>iot-modules-link</module>
+        <module>iot-modules-broker</module>
+        <module>iot-modules-protocolAnalysis</module>
+        <module>iot-modules-rule</module>
+    </modules>
+
+    <artifactId>iot-modules</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        iot-modules业务模块
+    </description>
+
+</project>

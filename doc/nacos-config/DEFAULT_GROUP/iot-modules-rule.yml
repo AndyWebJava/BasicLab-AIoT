@@ -1,0 +1,17 @@
+# Tomcat
+server:
+  port: 19308
+
+
+# mybatis配置
+mybatis:   
+  # 搜索指定包别名
+  typeAliasesPackage: com.basiclab.basiclabiot.rule
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath:mapper/**/*.xml
+
+# swagger配置
+swagger:
+  title: Link模块接口文档
+  license: Powered By basiclabiot
+  licenseUrl: http://www.mqttsnet.com/
