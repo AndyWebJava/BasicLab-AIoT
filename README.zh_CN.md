@@ -44,9 +44,9 @@ BasicLabIoT物联网平台作为BasicLab基础架构实验室众多产品中的�
 
 4、设备集成：设备管理、子设备管理、产品管理、协议管理、规则引擎、物模型
 
-5、流媒体：国标级联、流媒体设备、分屏监控、通道管理、推流、拉流、SIP信令服务（加入知识星球获取）
+5、规则引擎消息转发：支持KAFKA节点、HTTP节点、PREDICATE节点、ROCKET_MQ节点、RABBIT_MQ节点、MYSQL节点、MQTT节点、TOPIC节点、LOG节点
 
-6、规则引擎消息转发：支持KAFKA节点、HTTP节点、PREDICATE节点、ROCKET_MQ节点、RABBIT_MQ节点、MYSQL节点、MQTT节点、TOPIC节点、LOG节点（加入知识星球获取）
+6、流媒体：国标级联、流媒体设备、分屏监控、通道管理、推流、拉流、SIP信令服务（有需要视频平台功能的，加入知识星球后联系我获取）
 
 ## 技术栈
 
@@ -61,7 +61,7 @@ BasicLabIoT物联网平台作为BasicLab基础架构实验室众多产品中的�
 - PostgreSQL 13+
 
 ## 联系方式
-如需了解更多关于BasicLabIoT物联网平台内容，或者寻求专业版源码与商务合作，可以通过以下方式加群
+如需交流更多关于BasicLabIoT物联网开源平台内容，或者寻求专业版源码与商务合作，可以通过以下方式加群
 - 微信：Miczhang88
 - 邮箱：andywebjava@163.com
 
