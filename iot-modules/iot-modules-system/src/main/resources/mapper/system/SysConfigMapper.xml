@@ -51,10 +51,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				AND config_key like concat('%', #{configKey}, '%')
 			</if>
 			<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
-				and date_format(create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+				and to_char(create_time,'%y%m%d') &gt;= to_char(#{params.beginTime},'%y%m%d')
 			</if>
 			<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
-				and date_format(create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+				and to_char(create_time,'%y%m%d') &lt;= to_char(#{params.endTime},'%y%m%d')
 			</if>
 		</where>
     </select>
@@ -80,7 +80,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="configType != null and configType != ''">#{configType},</if>
 			<if test="createBy != null and createBy != ''">#{createBy},</if>
 			<if test="remark != null and remark != ''">#{remark},</if>
- 			sysdate()
+ 			CURRENT_TIMESTAMP
 		)
     </insert>
 	 
@@ -93,7 +93,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="configType != null and configType != ''">config_type = #{configType},</if>
             <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
             <if test="remark != null">remark = #{remark},</if>
- 			update_time = sysdate()
+ 			update_time = CURRENT_TIMESTAMP
         </set>
         where config_id = #{configId}
     </update>

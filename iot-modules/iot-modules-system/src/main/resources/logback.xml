@@ -4,9 +4,9 @@
     <property name="log.path" value="logs/iot-system"/>
     <!-- 日志输出格式 -->
     <property name="log.pattern"
-              value="%black(basiclabiot.iot.com) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)"/>
+              value="%black(leapfive.mqttsnet.com) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)"/>
 
-    <!-- basiclabiot.iot.com输出 -->
+    <!-- leapfive.mqttsnet.com输出 -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${log.pattern}</pattern>

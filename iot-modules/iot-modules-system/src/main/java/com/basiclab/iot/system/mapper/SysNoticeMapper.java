@@ -3,14 +3,12 @@ package com.basiclab.iot.system.mapper;
 import java.util.List;
 
 import com.basiclab.iot.system.domain.SysNotice;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 通知公告表 数据层
  * 
  * @author BasicLab基础架构实验室
  */
-@Mapper
 public interface SysNoticeMapper
 {
     /**

@@ -109,7 +109,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  			<if test="email != null and email != ''">#{email},</if>
  			<if test="status != null">#{status},</if>
  			<if test="createBy != null and createBy != ''">#{createBy},</if>
- 			sysdate()
+ 			CURRENT_TIMESTAMP
  		)
 	</insert>
 	
@@ -125,7 +125,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  			<if test="email != null">email = #{email},</if>
  			<if test="status != null and status != ''">status = #{status},</if>
  			<if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
- 			update_time = sysdate()
+ 			update_time = CURRENT_TIMESTAMP
  		</set>
  		where dept_id = #{deptId}
 	</update>
@@ -144,7 +144,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</update>
 	 
 	<update id="updateDeptStatusNormal" parameterType="Long">
- 	    update sys_dept set status = '0' where dept_id in 
+ 	    update sys_dept set status = '0' where dept_id in
  	    <foreach collection="array" item="deptId" open="(" separator="," close=")">
         	#{deptId}
         </foreach>

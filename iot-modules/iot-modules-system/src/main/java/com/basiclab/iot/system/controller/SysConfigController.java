@@ -13,7 +13,7 @@ import com.basiclab.iot.common.core.web.page.TableDataInfo;
 import com.basiclab.iot.common.log.annotation.Log;
 import com.basiclab.iot.common.log.enums.BusinessType;
 import com.basiclab.iot.common.security.annotation.PreAuthorize;
-import com.basiclab.iot.system.domain.SysConfig;
+import com.basiclab.iot.system.api.domain.SysConfig;
 import com.basiclab.iot.system.service.ISysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;

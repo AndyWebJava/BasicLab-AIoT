@@ -29,7 +29,7 @@ import java.net.InetAddress;
 @SpringBootApplication(scanBasePackages = {"com.basiclab.iot"})
 public class IoTSystemApplication {
     public static void main(String[] args) throws Exception {
-        ConfigurableApplicationContext application = SpringApplication.run(IoTSystemApplication.class, args);
+        ConfigurableApplicationContext application = SpringApplication.run(com.basiclab.iot.system.IoTSystemApplication.class, args);
         Environment env = application.getEnvironment();
         log.info("\n----------------------------------------------------------\n\t" + "应用 '{}' 启动成功! 访问连接:\n\t" + "Swagger文档(默认请使用网关访问): \t\thttp://{}:{}/swagger-ui.html\n\t"
                         + "数据库监控: \t\thttp://{}:{}/druid\n" + "----------------------------------------------------------", env.getProperty("spring.application.name"),

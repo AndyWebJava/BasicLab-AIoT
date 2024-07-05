@@ -46,10 +46,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			AND r.role_key like concat('%', #{roleKey}, '%')
 		</if>
 		<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
-			and date_format(r.create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+			and to_char(r.create_time,'%y%m%d') &gt;= to_char(#{params.beginTime},'%y%m%d')
 		</if>
 		<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
-			and date_format(r.create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+			and to_char(r.create_time,'%y%m%d') &lt;= to_char(#{params.endTime},'%y%m%d')
 		</if>
 		<!-- 数据范围过滤 -->
 		${params.dataScope}
@@ -117,7 +117,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  			<if test="status != null and status != ''">#{status},</if>
  			<if test="remark != null and remark != ''">#{remark},</if>
  			<if test="createBy != null and createBy != ''">#{createBy},</if>
- 			sysdate()
+ 			CURRENT_TIMESTAMP
  		)
 	</insert>
 	
@@ -133,7 +133,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  			<if test="status != null and status != ''">status = #{status},</if>
  			<if test="remark != null">remark = #{remark},</if>
  			<if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
- 			update_time = sysdate()
+ 			update_time = CURRENT_TIMESTAMP
  		</set>
  		where role_id = #{roleId}
 	</update>

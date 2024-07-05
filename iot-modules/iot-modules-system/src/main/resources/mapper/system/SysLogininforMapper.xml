@@ -15,7 +15,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<insert id="insertLogininfor" parameterType="SysLogininfor">
 		insert into sys_logininfor (user_name, status, ipaddr, msg, access_time)
-		values (#{userName}, #{status}, #{ipaddr}, #{msg}, sysdate())
+		values (#{userName}, #{status}, #{ipaddr}, #{msg}, CURRENT_TIMESTAMP)
 	</insert>
 	
 	<select id="selectLogininforList" parameterType="SysLogininfor" resultMap="SysLogininforResult">
@@ -31,10 +31,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				AND user_name like concat('%', #{userName}, '%')
 			</if>
 			<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
-				and date_format(access_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+				and to_char(access_time,'%y%m%d') &gt;= to_char(#{params.beginTime},'%y%m%d')
 			</if>
 			<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
-				and date_format(access_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+				and to_char(access_time,'%y%m%d') &lt;= to_char(#{params.endTime},'%y%m%d')
 			</if>
 		</where>
 		order by info_id desc

@@ -1,12 +1,12 @@
-package com.basiclab.iot.system.domain;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+package com.basiclab.iot.system.api.domain;
 
 import com.basiclab.iot.common.core.annotation.Excel;
 import com.basiclab.iot.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 /**
  * 参数配置表 sys_config

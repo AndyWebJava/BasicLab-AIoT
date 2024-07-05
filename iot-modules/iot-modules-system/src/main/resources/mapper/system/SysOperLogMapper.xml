@@ -29,7 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     
 	<insert id="insertOperlog" parameterType="SysOperLog">
 		insert into sys_oper_log(title, business_type, method, request_method, operator_type, oper_name, dept_name, oper_url, oper_ip, oper_param, json_result, status, error_msg, oper_time)
-        values (#{title}, #{businessType}, #{method}, #{requestMethod}, #{operatorType}, #{operName}, #{deptName}, #{operUrl}, #{operIp}, #{operParam}, #{jsonResult}, #{status}, #{errorMsg}, sysdate())
+        values (#{title}, #{businessType}, #{method}, #{requestMethod}, #{operatorType}, #{operName}, #{deptName}, #{operUrl}, #{operIp}, #{operParam}, #{jsonResult}, #{status}, #{errorMsg}, CURRENT_TIMESTAMP)
 	</insert>
 	
 	<select id="selectOperLogList" parameterType="SysOperLog" resultMap="SysOperLogResult">
@@ -54,10 +54,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				AND oper_name like concat('%', #{operName}, '%')
 			</if>
 			<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
-				and date_format(oper_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+				and to_char(oper_time,'%y%m%d') &gt;= to_char(#{params.beginTime},'%y%m%d')
 			</if>
 			<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
-				and date_format(oper_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+				and to_char(oper_time,'%y%m%d') &lt;= to_char(#{params.endTime},'%y%m%d')
 			</if>
 		</where>
 		order by oper_id desc

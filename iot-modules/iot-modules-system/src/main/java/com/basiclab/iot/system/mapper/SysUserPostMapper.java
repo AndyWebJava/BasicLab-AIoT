@@ -3,14 +3,12 @@ package com.basiclab.iot.system.mapper;
 import java.util.List;
 
 import com.basiclab.iot.system.domain.SysUserPost;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 用户与岗位关联表 数据层
  * 
  * @author BasicLab基础架构实验室
  */
-@Mapper
 public interface SysUserPostMapper
 {
     /**

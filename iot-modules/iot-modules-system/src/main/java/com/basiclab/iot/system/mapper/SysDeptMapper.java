@@ -3,7 +3,6 @@ package com.basiclab.iot.system.mapper;
 import java.util.List;
 
 import com.basiclab.iot.system.api.domain.SysDept;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 
@@ -12,7 +11,6 @@ import org.apache.ibatis.annotations.Param;
  * 
  * @author BasicLab基础架构实验室
  */
-@Mapper
 public interface SysDeptMapper
 {
     /**

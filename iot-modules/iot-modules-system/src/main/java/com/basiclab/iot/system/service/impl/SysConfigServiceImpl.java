@@ -10,7 +10,7 @@ import com.basiclab.iot.common.core.exception.ServiceException;
 import com.basiclab.iot.common.core.text.Convert;
 import com.basiclab.iot.common.core.utils.StringUtils;
 import com.basiclab.iot.common.redis.service.RedisService;
-import com.basiclab.iot.system.domain.SysConfig;
+import com.basiclab.iot.system.api.domain.SysConfig;
 import com.basiclab.iot.system.mapper.SysConfigMapper;
 import com.basiclab.iot.system.service.ISysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;

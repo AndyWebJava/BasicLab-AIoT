@@ -2,7 +2,7 @@ package com.basiclab.iot.system.service;
 
 import java.util.List;
 
-import com.basiclab.iot.system.domain.SysConfig;
+import com.basiclab.iot.system.api.domain.SysConfig;
 
 /**
  * 参数配置 服务层

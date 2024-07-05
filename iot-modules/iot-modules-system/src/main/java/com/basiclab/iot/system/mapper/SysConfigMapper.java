@@ -1,16 +1,14 @@
 package com.basiclab.iot.system.mapper;
 
-import com.basiclab.iot.system.domain.SysConfig;
-import org.apache.ibatis.annotations.Mapper;
-
 import java.util.List;
+
+import com.basiclab.iot.system.api.domain.SysConfig;
 
 /**
  * 参数配置 数据层
  * 
  * @author BasicLab基础架构实验室
  */
-@Mapper
 public interface SysConfigMapper
 {
     /**
