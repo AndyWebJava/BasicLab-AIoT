@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * @program: basiclabiot
  * @description: 协议数据内容返回VO
- * @packagename: com.basiclab.basiclabiot.device.vo.result
+ * @packagename: com.basiclab.iot.device.vo.result
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-22 15:44

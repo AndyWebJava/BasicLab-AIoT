@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
 /**
 * @program: basiclabiot
 * @description: ${description}
-* @packagename: com.basiclab.basiclabiot.link.api.domain.product.entity
+* @packagename: com.basiclab.iot.link.api.domain.product.entity
 * @author: BasiclabIoT
 * @e-mainl: andywebjava@163.com
 * @date: 2022-11-18 20:36

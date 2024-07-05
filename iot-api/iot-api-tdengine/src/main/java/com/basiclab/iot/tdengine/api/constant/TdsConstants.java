@@ -3,10 +3,10 @@ package com.basiclab.iot.tdengine.api.constant;
 /**
  * 全局基础常量
  *
- * @author mqttsnet
+ * @author iot
  * @version v1.0
  * @date 2022/4/12 11:05 PM
- * @create [2022/4/12 11:05 PM ] [mqttsnet] [初始创建]
+ * @create [2022/4/12 11:05 PM ] [iot] [初始创建]
  */
 public interface TdsConstants {
 

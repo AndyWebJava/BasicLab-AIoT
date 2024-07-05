@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description: 协议管理服务降级处理
- * @packagename: com.basiclab.basiclabiot.link.api.factory
+ * @packagename: com.basiclab.iot.link.api.factory
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-11 15:17

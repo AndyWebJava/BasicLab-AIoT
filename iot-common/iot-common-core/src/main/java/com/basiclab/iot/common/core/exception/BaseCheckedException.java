@@ -5,7 +5,7 @@ import com.basiclab.iot.common.core.exception.base.BaseException;
 /**
  * 运行期异常基类
  *
- * @author mqttsnet
+ * @author iot
  * @version 1.0
  */
 public abstract class BaseCheckedException extends BaseException {

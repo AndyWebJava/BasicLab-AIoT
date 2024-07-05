@@ -1,4 +1,4 @@
-import { parseTime } from './basiclabiot'
+import { parseTime } from './iot'
 
 /**
  * 表格时间格式化

@@ -17,7 +17,7 @@ fdfs:
 
 # Minio配置
 minio:
-  url: http://127.0.0.1:16001
-  accessKey: minioadmin
-  secretKey: minioadmin
-  bucketName: basiclabiot
+  url: http://10.0.0.87:9000
+  accessKey: minio_root
+  secretKey: minio_123456
+  bucketName: iot

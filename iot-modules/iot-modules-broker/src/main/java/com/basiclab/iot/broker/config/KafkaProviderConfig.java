@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: KafkaProviderConfig
- * @packagename: com.basiclab.basiclabiot.config.kafka
+ * @packagename: com.basiclab.iot.config.kafka
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-06-18 11:28
@@ -25,17 +25,17 @@ import java.util.Map;
 public class KafkaProviderConfig {
 
 
-    @Value("${spring.kafka.basiclabiot.producer.bootstrap-servers}")
+    @Value("${spring.kafka.iot.producer.bootstrap-servers}")
     private String bootstrapServers;
-    @Value("${spring.kafka.basiclabiot.producer.transaction-id-prefix}")
+    @Value("${spring.kafka.iot.producer.transaction-id-prefix}")
     private String transactionIdPrefix;
-    @Value("${spring.kafka.basiclabiot.producer.acks}")
+    @Value("${spring.kafka.iot.producer.acks}")
     private String acks;
-    @Value("${spring.kafka.basiclabiot.producer.retries}")
+    @Value("${spring.kafka.iot.producer.retries}")
     private String retries;
-    @Value("${spring.kafka.basiclabiot.producer.batch-size}")
+    @Value("${spring.kafka.iot.producer.batch-size}")
     private String batchSize;
-    @Value("${spring.kafka.basiclabiot.producer.buffer-memory}")
+    @Value("${spring.kafka.iot.producer.buffer-memory}")
     private String bufferMemory;
 
     @Bean

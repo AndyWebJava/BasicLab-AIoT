@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 /**
  * @program: basiclabiot
  * @description: 跨域配置
- * @packagename: com.basiclab.basiclabiot.gateway.config
+ * @packagename: com.basiclab.iot.gateway.config
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-08-08 16:11

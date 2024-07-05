@@ -31,7 +31,7 @@ public class NoRepeatSubmitAop {
     @Autowired
     private RedisService redisService;
 
-    @Around("execution(* com.basiclab.basiclabiot.link.controller..*.*(..)) && @annotation(nrs)")
+    @Around("execution(* com.basiclab.iot.link.controller..*.*(..)) && @annotation(nrs)")
     public Object arround(ProceedingJoinPoint pjp, NoRepeatSubmit nrs) {
         try {
             ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();

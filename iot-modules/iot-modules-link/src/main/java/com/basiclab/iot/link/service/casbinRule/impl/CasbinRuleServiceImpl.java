@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description:
- * @packagename: com.basiclab.basiclabiot.link.service.casbinRule.impl
+ * @packagename: com.basiclab.iot.link.service.casbinRule.impl
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-06-16 18:49

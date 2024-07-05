@@ -1,7 +1,7 @@
 package com.basiclab.iot.broker.mqs.mqtt.handler;
 
-import com.basiclab.basic.protocol.factory.ProtocolMessageAdapter;
-import com.basiclab.basic.protocol.model.EncryptionDetailsDTO;
+import com.basiclab.iot.protocol.factory.ProtocolMessageAdapter;
+import com.basiclab.iot.protocol.model.EncryptionDetailsDTO;
 import com.basiclab.iot.broker.api.RemoteMqttBrokerOpenApi;
 import com.basiclab.iot.broker.mqs.mqtt.handler.factory.AbstractMessageHandler;
 import com.basiclab.iot.broker.mqs.mqtt.service.MqttEventCommandService;
@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: 处理COMMAND_RESPONSE主题
- * @packagename: com.basiclab.basiclabiot.mqtt.handler
+ * @packagename: com.basiclab.iot.mqtt.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-05 23:00

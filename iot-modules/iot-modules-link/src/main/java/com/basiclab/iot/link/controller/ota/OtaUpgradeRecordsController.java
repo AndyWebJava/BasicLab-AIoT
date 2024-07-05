@@ -21,9 +21,9 @@ import javax.validation.Valid;
  * OTA升级记录表
  * </p>
  *
- * @author mqttsnet
+ * @author iot
  * @date 2024-01-12 22:42:04
- * @create [2024-01-12 22:42:04] [mqttsnet]
+ * @create [2024-01-12 22:42:04] [iot]
  */
 @Slf4j
 @Validated

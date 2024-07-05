@@ -28,7 +28,7 @@
             size="mini"
             icon="el-icon-cloudy"
             plain
-            @click="goTarget('https://github.com/mqttsnet/basiclabiot.git')"
+            @click="goTarget('https://github.com/iot/basiclabiot.git')"
           >访问GitHub
           </el-button
           >
@@ -63,13 +63,13 @@
               <i class="el-icon-s-promotion"></i> 官网：
               <el-link
                 href="https://gitee.com/vegetable-chicken-blog/basiclab-iot"
-                target="_blank">https://www.mqttsnet.com
+                target="_blank">https://www.iot.com
               </el-link>
             </p>
             <p>
               <i class="el-icon-chat-dot-round"></i> MQTTSNET团队邮箱：<a
               href="javascript:;"
-            >/ *mqttsnet@163.com</a>
+            >/ *iot@163.com</a>
             </p>
           </div>
         </el-card>

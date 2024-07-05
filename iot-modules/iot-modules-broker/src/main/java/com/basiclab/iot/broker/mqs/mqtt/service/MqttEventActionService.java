@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 /**
  * @program: basiclabiot
  * @description: MqttEventActionHandler
- * @packagename: com.basiclab.basiclabiot.mqtt.handler
+ * @packagename: com.basiclab.iot.mqtt.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-08-20 16:09

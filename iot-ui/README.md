@@ -2,7 +2,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/mqttsnet/basiclabiot.git
+git clone https://github.com/iot/basiclabiot.git
 
 # 进入项目目录
 cd iot-ui

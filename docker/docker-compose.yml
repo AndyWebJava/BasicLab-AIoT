@@ -7,9 +7,9 @@ networks:
 
 # 作者及社区信息
 x-metadata-config: &metadata-config
-  maintainer: "mqttsnet@163.com"
-  community: "mqttsnet"
-  copyright: "Copyright © 2023 mqttsnet"
+  maintainer: "iot@163.com"
+  community: "iot"
+  copyright: "Copyright © 2023 iot"
 
 # 共享环境配置
 x-env-config: &env-config
@@ -26,7 +26,7 @@ x-shared-config: &shared-config
   environment:
     - TZ=Asia/Shanghai
   volumes:
-    - /data01/mqttsnet/basiclabiot:/home/www/mqttsnet
+    - /data01/iot/basiclabiot:/home/www/iot
     - /etc/timezone:/etc/timezone
     - /etc/localtime:/etc/localtime
   restart: always

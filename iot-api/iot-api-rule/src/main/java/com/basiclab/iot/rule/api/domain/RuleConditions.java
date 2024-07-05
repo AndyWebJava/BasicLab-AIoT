@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 /**
 * @program: basiclabiot
 * @description: ${description}
-* @packagename: com.basiclab.basiclabiot.rule.api.domain
+* @packagename: com.basiclab.iot.rule.api.domain
 * @author: BasiclabIoT
 * @e-mainl: andywebjava@163.com
 * @date: 2022-07-21 18:50

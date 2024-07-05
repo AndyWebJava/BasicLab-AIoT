@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: 产品管理服务
- * @packagename: com.basiclab.basiclabiot.link.api
+ * @packagename: com.basiclab.iot.link.api
  * @author: shisen
  * @date: 2022-07-26
  **/

@@ -37,7 +37,7 @@ import java.util.*;
 /**
  * @program: basiclabiot
  * @description: 规则设备联动业务层接口实现类
- * @packagename: com.basiclab.basiclabiot.rule.service.impl
+ * @packagename: com.basiclab.iot.rule.service.impl
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-11-03 18:50

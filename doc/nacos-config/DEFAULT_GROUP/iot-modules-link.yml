@@ -3,14 +3,19 @@ server:
   port: 19305
 
 # mybatis配置
-mybatis:   
+mybatis-plus:   
   # 搜索指定包别名
-  typeAliasesPackage: com.basiclab.basiclabiot.link
+  typeAliasesPackage: com.basiclab.iot.link
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
   mapperLocations: classpath:mapper/**/*.xml
 
 # swagger配置
-swagger:
-  title: Link模块接口文档
-  license: Powered By basiclabiot
-  licenseUrl: http://www.mqttsnet.com/
+# swagger:
+#   title: Link模块接口文档
+#   license: Powered By basiclab
+#   licenseUrl: http://www.doc.basiclab.top/
+
+logging:
+  level:
+    com.basiclab.iot.link.mapper: DEBUG
+

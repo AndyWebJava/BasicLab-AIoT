@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: 设备操作结果数据模型
- * @packagename: com.basiclab.basiclabiot.device.vo.result
+ * @packagename: com.basiclab.iot.device.vo.result
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-22 14:17

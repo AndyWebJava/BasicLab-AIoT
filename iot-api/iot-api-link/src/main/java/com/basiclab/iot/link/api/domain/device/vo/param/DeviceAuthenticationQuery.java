@@ -12,7 +12,7 @@ import java.io.Serializable;
 /**
  * @program: iot-cloud-pro-datasource-column
  * @description: 设备认证Query
- * @packagename: com.basiclab.basiclabiot.device.vo.query
+ * @packagename: com.basiclab.iot.device.vo.query
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-20 20:27

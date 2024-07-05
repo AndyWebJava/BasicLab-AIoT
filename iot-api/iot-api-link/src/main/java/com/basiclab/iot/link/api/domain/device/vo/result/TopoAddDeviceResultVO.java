@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: 协议添加网关子设备响应信息
- * @packagename: com.basiclab.basiclabiot.device.vo.result
+ * @packagename: com.basiclab.iot.device.vo.result
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-18 23:03

@@ -22,12 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /.idea
-/leapfive-modules/*/target
-/leapfive-common/*/target
-/leapfive-api/*/target
-/leapfive-auth/target
-/leapfive-gateway/target
-/leapfive-registry/target
-/leapfive-visual/*/target
+/iot-modules/*/target
+/iot-common/*/target
+/iot-api/*/target
+/iot-auth/target
+/iot-gateway/target
+/iot-registry/target
+/iot-visual/*/target
 *.iml
 

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 /**
  * @program: basiclabiot
  * @description: 其他默认Topic处理器
- * @packagename: com.basiclab.basiclabiot.mqtt.handler
+ * @packagename: com.basiclab.iot.mqtt.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-05 22:55

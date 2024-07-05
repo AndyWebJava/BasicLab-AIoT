@@ -10,8 +10,8 @@ spring:
 
 #请求处理的超时时间
 ribbon:
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
+  ReadTimeout: 40000
+  ConnectTimeout: 40000
 
 # feign 配置
 feign:
@@ -26,8 +26,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 10000
-        readTimeout: 10000
+        connectTimeout: 40000
+        readTimeout: 40000
   compression:
     request:
       enabled: true
@@ -56,4 +56,4 @@ threadBus:
     #缓冲队列大小
     queue-capacity: 1000
     #线程池名前缀
-    thread-name-prefix: basiclabiotAsync-
+    thread-name-prefix: iotAsync-

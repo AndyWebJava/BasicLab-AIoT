@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description:
- * @packagename: com.basiclab.basiclabiot.mqtt.handle.listener
+ * @packagename: com.basiclab.iot.mqtt.handle.listener
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-28 14:43

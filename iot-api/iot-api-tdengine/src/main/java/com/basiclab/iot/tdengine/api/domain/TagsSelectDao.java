@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 /**
  * @program: basiclabiot
  * @description: 标签查询模型
- * @packagename: com.basiclab.basiclabiot.tdengine.api.domain.rule
+ * @packagename: com.basiclab.iot.tdengine.api.domain.rule
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-27 18:40

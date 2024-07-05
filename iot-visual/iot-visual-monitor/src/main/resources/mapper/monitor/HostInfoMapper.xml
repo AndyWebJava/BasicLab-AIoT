@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.basiclab.basiclabiot.monitor.mapper.HostInfoMapper">
-<resultMap id="resultMap" type="com.basiclab.basiclabiot.monitor.api.domain.HostInfo">
+<mapper namespace="com.basiclab.iot.monitor.mapper.HostInfoMapper">
+<resultMap id="resultMap" type="com.basiclab.iot.monitor.api.domain.HostInfo">
 		<id column="ID" property="id" jdbcType="CHAR" />
 		<result column="IP" property="ip" jdbcType="CHAR" />
 		<result column="PORT" property="port" jdbcType="CHAR" />
@@ -41,7 +41,7 @@
 	</delete>
 
 
-	<insert id="save" parameterType="com.basiclab.basiclabiot.monitor.api.domain.HostInfo">
+	<insert id="save" parameterType="com.basiclab.iot.monitor.api.domain.HostInfo">
 		INSERT INTO HOST_INFO 
     	<trim prefix="(" suffix=")" suffixOverrides="," >
       		<if test="id != null" >ID,</if>
@@ -64,7 +64,7 @@
 	</insert>
 	
 	
-	<update id="updateById" parameterType="com.basiclab.basiclabiot.monitor.api.domain.HostInfo">
+	<update id="updateById" parameterType="com.basiclab.iot.monitor.api.domain.HostInfo">
 		UPDATE HOST_INFO
 		<set>
 			<if test="ip != null">
@@ -87,7 +87,7 @@
 		WHERE ID = #{id}
 	</update>
 	
-	<select id="selectByParams" parameterType="com.basiclab.basiclabiot.monitor.api.domain.HostInfo" resultMap="resultMap">
+	<select id="selectByParams" parameterType="com.basiclab.iot.monitor.api.domain.HostInfo" resultMap="resultMap">
 		SELECT
 		<include refid="tableColumnList" />
 		FROM HOST_INFO

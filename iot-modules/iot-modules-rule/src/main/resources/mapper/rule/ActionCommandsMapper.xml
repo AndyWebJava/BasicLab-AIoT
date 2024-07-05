@@ -119,7 +119,7 @@
         #{commandId,jdbcType=INTEGER},
       </if>
       <if test="commandBody != null">
-        #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler},
+        #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler},
       </if>
       <if test="ctreateBy != null">
         #{ctreateBy,jdbcType=VARCHAR},
@@ -164,7 +164,7 @@
         command_id = #{commandId,jdbcType=INTEGER},
       </if>
       <if test="commandBody != null">
-        command_body = #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler},
+        command_body = #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler},
       </if>
       <if test="ctreateBy != null">
         ctreate_by = #{ctreateBy,jdbcType=VARCHAR},
@@ -235,7 +235,7 @@
       </trim>
       <trim prefix="command_body = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id,jdbcType=INTEGER} then #{item.commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler}
+          when id = #{item.id,jdbcType=INTEGER} then #{item.commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler}
         </foreach>
       </trim>
       <trim prefix="ctreate_by = case" suffix="end,">
@@ -327,7 +327,7 @@
       <trim prefix="command_body = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
           <if test="item.commandBody != null">
-            when id = #{item.id,jdbcType=INTEGER} then #{item.commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler}
+            when id = #{item.id,jdbcType=INTEGER} then #{item.commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler}
           </if>
         </foreach>
       </trim>
@@ -375,7 +375,7 @@
     <foreach collection="list" item="item" separator=",">
       (#{item.businessType,jdbcType=INTEGER}, #{item.ruleIdentification,jdbcType=VARCHAR}, 
         #{item.productIdentification,jdbcType=VARCHAR}, #{item.deviceIdentification,jdbcType=VARCHAR}, 
-        #{item.serviceId,jdbcType=INTEGER}, #{item.serviceName,jdbcType=VARCHAR}, #{item.commandName,jdbcType=VARCHAR},#{item.commandId,jdbcType=INTEGER}, #{item.commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler},
+        #{item.serviceId,jdbcType=INTEGER}, #{item.serviceName,jdbcType=VARCHAR}, #{item.commandName,jdbcType=VARCHAR},#{item.commandId,jdbcType=INTEGER}, #{item.commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler},
         #{item.ctreateBy,jdbcType=VARCHAR})
     </foreach>
   </insert>
@@ -514,7 +514,7 @@
         #{commandId,jdbcType=INTEGER},
       </if>
       <if test="commandBody != null">
-        #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler},
+        #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler},
       </if>
       <if test="ctreateBy != null">
         #{ctreateBy,jdbcType=VARCHAR},
@@ -559,7 +559,7 @@
         command_id = #{commandId,jdbcType=INTEGER},
       </if>
       <if test="commandBody != null">
-        command_body = #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler},
+        command_body = #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler},
       </if>
       <if test="ctreateBy != null">
         ctreate_by = #{ctreateBy,jdbcType=VARCHAR},
@@ -603,7 +603,7 @@
         and command_id = #{commandId,jdbcType=INTEGER}
       </if>
       <if test="commandBody != null">
-        and command_body = #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.basiclabiot.rule.common.handler.JsonTypeHandler}
+        and command_body = #{commandBody,jdbcType=LONGVARCHAR,typeHandler=com.basiclab.iot.rule.common.handler.JsonTypeHandler}
       </if>
       <if test="ctreateBy != null">
         and ctreate_by = #{ctreateBy,jdbcType=VARCHAR}

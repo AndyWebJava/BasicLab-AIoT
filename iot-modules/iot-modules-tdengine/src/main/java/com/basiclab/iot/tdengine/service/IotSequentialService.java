@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description:
- * @packagename: com.basiclab.basiclabiot.tdengine.service.impl
+ * @packagename: com.basiclab.iot.tdengine.service.impl
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-11-04 10:50

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.link.mapper.product
+ * @packagename: com.basiclab.iot.link.mapper.product
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-11-18 20:37

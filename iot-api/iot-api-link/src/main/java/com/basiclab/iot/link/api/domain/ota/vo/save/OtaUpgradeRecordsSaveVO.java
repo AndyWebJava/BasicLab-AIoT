@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
  * OTA升级记录表
  * </p>
  *
- * @author mqttsnet
+ * @author iot
  * @date 2024-01-12 22:42:04
  */
 @Data

@@ -3,7 +3,7 @@ package com.basiclab.iot.broker.mqs.mqtt.handler;
 import com.alibaba.fastjson.JSON;
 import com.basiclab.iot.broker.mqs.mqtt.handler.factory.AbstractMessageHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.basiclab.basic.protocol.factory.ProtocolMessageAdapter;
+import com.basiclab.iot.protocol.factory.ProtocolMessageAdapter;
 import com.basiclab.iot.broker.api.RemoteMqttBrokerOpenApi;
 import com.basiclab.iot.common.redis.service.RedisService;
 import com.basiclab.iot.link.api.RemoteDeviceOpenAnyService;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: 处理SECRET_KEY主题
- * @packagename: com.basiclab.basiclabiot.mqtt.handler
+ * @packagename: com.basiclab.iot.mqtt.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-05 22:57

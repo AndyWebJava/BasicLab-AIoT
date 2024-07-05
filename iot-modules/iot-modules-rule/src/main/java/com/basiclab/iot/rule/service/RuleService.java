@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.rule.service
+ * @packagename: com.basiclab.iot.rule.service
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-21 18:47

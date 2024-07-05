@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description: kafkaListener异常处理
- * @packagename: com.basiclab.basiclabiot.common.kafka.handler
+ * @packagename: com.basiclab.iot.common.kafka.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-06-18 11:44

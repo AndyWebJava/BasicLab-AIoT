@@ -39,7 +39,7 @@ public class PreAuthorizeAspect
     /** 数组为0时 */
     private static final Integer ARRAY_EMPTY = 0;
 
-    @Around("@annotation(com.basiclab.basiclabiot.common.security.annotation.PreAuthorize)")
+    @Around("@annotation(com.basiclab.iot.common.security.annotation.PreAuthorize)")
     public Object around(ProceedingJoinPoint point) throws Throwable
     {
         Signature signature = point.getSignature();

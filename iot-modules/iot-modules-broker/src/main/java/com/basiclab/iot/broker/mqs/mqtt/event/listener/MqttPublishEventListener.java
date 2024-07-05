@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description: MqttPublish事件监听器
- * @packagename: com.basiclab.basiclabiot.consumer.mqtt.listener
+ * @packagename: com.basiclab.iot.consumer.mqtt.listener
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-28 00:12

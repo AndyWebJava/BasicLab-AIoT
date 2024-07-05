@@ -5,7 +5,7 @@ import com.basiclab.iot.common.core.utils.StringUtils;
 /**
  * @program: basiclabiot
  * @description: MQTT事件枚举
- * @packagename: com.basiclab.basiclabiot.common.core.enums
+ * @packagename: com.basiclab.iot.common.core.enums
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-12-16 19:42

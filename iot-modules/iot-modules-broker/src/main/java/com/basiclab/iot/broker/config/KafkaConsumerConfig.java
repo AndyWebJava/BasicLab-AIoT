@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: KafkaConsumerConfig
- * @packagename: com.basiclab.basiclabiot.config.kafka
+ * @packagename: com.basiclab.iot.config.kafka
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-06-18 11:29
@@ -28,25 +28,25 @@ import java.util.Map;
 public class KafkaConsumerConfig {
 
 
-    @Value("${spring.kafka.basiclabiot.consumer.bootstrap-servers}")
+    @Value("${spring.kafka.iot.consumer.bootstrap-servers}")
     private String bootstrapServers;
-    @Value("${spring.kafka.basiclabiot.consumer.group-id}")
+    @Value("${spring.kafka.iot.consumer.group-id}")
     private String groupId;
-    @Value("${spring.kafka.basiclabiot.consumer.enable-auto-commit}")
+    @Value("${spring.kafka.iot.consumer.enable-auto-commit}")
     private boolean enableAutoCommit;
-    @Value("${spring.kafka.basiclabiot.properties.session.timeout.ms}")
+    @Value("${spring.kafka.iot.properties.session.timeout.ms}")
     private String sessionTimeout;
-    @Value("${spring.kafka.basiclabiot.properties.max.poll.interval.ms}")
+    @Value("${spring.kafka.iot.properties.max.poll.interval.ms}")
     private String maxPollIntervalTime;
-    @Value("${spring.kafka.basiclabiot.consumer.max-poll-records}")
+    @Value("${spring.kafka.iot.consumer.max-poll-records}")
     private String maxPollRecords;
-    @Value("${spring.kafka.basiclabiot.consumer.auto-offset-reset}")
+    @Value("${spring.kafka.iot.consumer.auto-offset-reset}")
     private String autoOffsetReset;
-    @Value("${spring.kafka.basiclabiot.listener.concurrency}")
+    @Value("${spring.kafka.iot.listener.concurrency}")
     private Integer concurrency;
-    @Value("${spring.kafka.basiclabiot.listener.missing-topics-fatal}")
+    @Value("${spring.kafka.iot.listener.missing-topics-fatal}")
     private boolean missingTopicsFatal;
-    @Value("${spring.kafka.basiclabiot.listener.poll-timeout}")
+    @Value("${spring.kafka.iot.listener.poll-timeout}")
     private long pollTimeout;
 
     @Bean

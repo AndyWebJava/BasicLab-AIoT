@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 /**
 * @program: basiclabiot
 * @description: ${description}
-* @packagename: com.basiclab.basiclabiot.link.api.domain.protocol
+* @packagename: com.basiclab.iot.link.api.domain.protocol
 * @author: BasiclabIoT
 * @e-mainl: andywebjava@163.com
 * @date: 2022-07-01 17:56

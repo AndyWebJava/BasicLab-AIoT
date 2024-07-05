@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 /**
  * @program: basiclabiot
  * @description: MQTT事件枚举
- * @packagename: com.basiclab.basiclabiot.broker.api.domain.enumeration
+ * @packagename: com.basiclab.iot.broker.api.domain.enumeration
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-12-16 19:42

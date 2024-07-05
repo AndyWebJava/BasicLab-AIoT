@@ -4,9 +4,9 @@
     <property name="log.path" value="logs/iot-broker"/>
     <!-- 日志输出格式 -->
     <property name="log.pattern"
-              value="%black(basiclabiot.mqttsnet.com) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)"/>
+              value="%black(basiclabiot.iot.com) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)"/>
 
-    <!-- basiclabiot.mqttsnet.com输出 -->
+    <!-- basiclabiot.iot.com输出 -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${log.pattern}</pattern>
@@ -106,7 +106,7 @@
     </appender>
 
     <!-- 系统模块日志级别控制  -->
-    <logger name="com.basiclab.basiclabiot" level="info"/>
+    <logger name="com.basiclab.iot" level="info"/>
     <!-- Spring日志级别控制  -->
     <logger name="org.springframework" level="warn"/>
 

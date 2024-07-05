@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * @program: basiclabiot
  * @description: 协议管理服务
- * @packagename: com.basiclab.basiclabiot.link.api
+ * @packagename: com.basiclab.iot.link.api
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-11 15:15

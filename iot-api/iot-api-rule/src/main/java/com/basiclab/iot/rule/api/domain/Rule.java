@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.rule.api.domain
+ * @packagename: com.basiclab.iot.rule.api.domain
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-11-18 20:39

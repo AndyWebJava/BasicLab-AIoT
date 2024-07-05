@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * @program: basiclabiot
  * @description: MqttDisconnectEvent
- * @packagename: com.basiclab.basiclabiot.mqtt.event
+ * @packagename: com.basiclab.iot.mqtt.event
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-28 01:52

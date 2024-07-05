@@ -2,7 +2,7 @@
 server:
   port: 19306
 
-basiclabiot:
+iot:
   #feign 通用三方API服务
   feign:
     #bifromq 服务API

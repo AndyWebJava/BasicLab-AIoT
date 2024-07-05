@@ -2,9 +2,9 @@ package com.basiclab.iot.link.service.device.impl;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
-import com.basiclab.basic.protocol.factory.ProtocolMessageAdapter;
-import com.basiclab.basic.protocol.model.EncryptionDetailsDTO;
-import com.basiclab.basic.protocol.model.ProtocolDataMessageDTO;
+import com.basiclab.iot.protocol.factory.ProtocolMessageAdapter;
+import com.basiclab.iot.protocol.model.EncryptionDetailsDTO;
+import com.basiclab.iot.protocol.model.ProtocolDataMessageDTO;
 import com.basiclab.iot.broker.api.RemoteMqttBrokerOpenApi;
 import com.basiclab.iot.broker.api.domain.enumeration.QosEnum;
 import com.basiclab.iot.broker.api.domain.vo.PublishMessageRequestVO;
@@ -45,9 +45,9 @@ import java.util.Optional;
  * 设备命令下发及响应表
  * </p>
  *
- * @author mqttsnet
+ * @author iot
  * @date 2023-10-20 17:27:25
- * @create [2023-10-20 17:27:25] [mqttsnet]
+ * @create [2023-10-20 17:27:25] [iot]
  */
 @Slf4j
 @RequiredArgsConstructor

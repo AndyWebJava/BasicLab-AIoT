@@ -18,7 +18,7 @@ import java.io.PrintWriter;
 /**
  * @program: basiclabiot
  * @description: 动态编译代码Controller
- * @packagename: com.basiclab.basiclabiot.link.controller.protocol
+ * @packagename: com.basiclab.iot.link.controller.protocol
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-01 18:31

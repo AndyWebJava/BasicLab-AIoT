@@ -31,8 +31,8 @@ spring:
         # 主库数据源
         master:
           driver-class-name: com.taosdata.jdbc.rs.RestfulDriver
-          url: jdbc:TAOS-RS://127.0.0.1:6041/${spring.datasource.dynamic.datasource.master.dbName}?user=${spring.datasource.dynamic.datasource.master.username}&password=${spring.datasource.dynamic.datasource.master.password}&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
-          dbName: basiclabiot
+          url: jdbc:TAOS-RS://10.0.0.87:6041/${spring.datasource.dynamic.datasource.master.dbName}?user=${spring.datasource.dynamic.datasource.master.username}&password=${spring.datasource.dynamic.datasource.master.password}&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+          dbName: iot
           username: root
           password: taosdata
         # 从库数据源
@@ -44,7 +44,7 @@ spring:
   aop: 
     auto: true
     proxy-target-class: true
-mybatis: 
+mybatis-plus: 
   mapper-locations: classpath:mapper/*.xml
 
 # seata配置
@@ -75,10 +75,14 @@ seata:
       server-addr: 127.0.0.1:18848
       namespace: 291b5c47-d2d3-4d42-b338-e23c59d32b30
 
-logging:  
-  level: 
-    com: 
-      taosdata: 
-        jdbc: 
-          springbootdemo: 
-            dao: debug
+# logging:  
+#   level: 
+#     com: 
+#       taosdata: 
+#         jdbc: 
+#           springbootdemo: 
+#             dao: debug
+
+logging:
+  level:
+    com.basiclab.iot.tdengine.mapper: DEBUG

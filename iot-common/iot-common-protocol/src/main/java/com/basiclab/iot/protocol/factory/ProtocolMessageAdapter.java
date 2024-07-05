@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description: 协议信息适配器
- * @packagename: com.basiclab.basiclabiot.mqtt.handler
+ * @packagename: com.basiclab.iot.mqtt.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-30 15:08

@@ -16,7 +16,7 @@ import java.io.Serializable;
  * 设备命令下发及响应表
  * </p>
  *
- * @author mqttsnet
+ * @author iot
  * @date 2023-10-20 17:27:25
  */
 @Data

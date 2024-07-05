@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 /**
  * @program: basiclabiot
  * @description: 子设备管理缓存刷新定时任务
- * @packagename: com.basiclab.basiclabiot.job.task.link
+ * @packagename: com.basiclab.iot.job.task.link
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-11 15:08

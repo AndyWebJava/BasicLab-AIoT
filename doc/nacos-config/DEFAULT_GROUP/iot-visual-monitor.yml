@@ -6,9 +6,9 @@ server:
 spring: 
   security:
     user:
-      name: basiclabiot
+      name: basiclab
       password: 123456
   boot:
     admin:
       ui:
-        title: basiclabiot服务状态监控
+        title: basiclab服务状态监控

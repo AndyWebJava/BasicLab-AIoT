@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.rule.service.impl
+ * @packagename: com.basiclab.iot.rule.service.impl
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-21 18:47

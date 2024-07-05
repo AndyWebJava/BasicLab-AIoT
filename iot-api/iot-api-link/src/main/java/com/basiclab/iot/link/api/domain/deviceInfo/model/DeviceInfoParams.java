@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
  * @program: basiclabiot
  * @description: 子设备信息
- * @packagename: com.basiclab.basiclabiot.link.api.domain.device.entity
+ * @packagename: com.basiclab.iot.link.api.domain.device.entity
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-29 17:54

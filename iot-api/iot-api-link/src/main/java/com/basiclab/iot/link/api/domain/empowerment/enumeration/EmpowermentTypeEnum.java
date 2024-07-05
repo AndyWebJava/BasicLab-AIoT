@@ -11,7 +11,7 @@ import java.util.Optional;
 /**
  * @program: iot-cloud-pro-datasource-column
  * @description: 赋能类型
- * @packagename: com.basiclab.basiclabiot.empowerment.enumeration
+ * @packagename: com.basiclab.iot.empowerment.enumeration
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-09-16 21:50

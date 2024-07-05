@@ -12,7 +12,7 @@ import java.util.Map;
 @Component
 public class TaosAspect {
 
-    @Around("execution(java.util.Map<String,Object> com.basiclab.basiclabiot.tdengine.mapper.*.*(..))")
+    @Around("execution(java.util.Map<String,Object> com.basiclab.iot.tdengine.mapper.*.*(..))")
     public Object handleType(ProceedingJoinPoint joinPoint) {
         Map<String, Object> result = null;
         try {

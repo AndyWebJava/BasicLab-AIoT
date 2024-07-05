@@ -5,7 +5,7 @@ import com.basiclab.iot.common.core.domain.R;
 /**
  * @program: basiclabiot
  * @description: 规则设备联动业务层接口
- * @packagename: com.basiclab.basiclabiot.rule.service
+ * @packagename: com.basiclab.iot.rule.service
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-11-03 18:44

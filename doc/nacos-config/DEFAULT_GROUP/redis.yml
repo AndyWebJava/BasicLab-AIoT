@@ -2,9 +2,9 @@
 spring: 
   redis:
     database: 4
-    host: 127.0.0.1
-    port: 16379  
-    password: Lyzmlr9#rx
+    host: 10.0.0.87
+    port: 6379  
+    password: basiclab@iot975248395
     timeout: 30000
     jedis:
       pool:

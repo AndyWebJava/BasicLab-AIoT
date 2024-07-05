@@ -109,3 +109,78 @@ security:
       #客户端身份认证接口
       - /link/deviceOpenAny/clientConnectionAuthentication
       - /tdengine/**
+
+knife4j:
+  # 聚合swagger文档
+  gateway:
+    enabled: true
+    # 排序规则(tag/operation排序自4.2.0版本新增)
+    # 取值：alpha-默认排序规则，官方swagger-ui默认实现,order-Knife4j提供的增强排序规则，开发者可扩展x-order，根据数值来自定义排序
+    tags-sorter: order
+    operations-sorter: order
+    # 指定手动配置的模式(默认为该模式)
+    strategy: manual
+    routes:
+      - name: 认证中心
+        # 真实子服务访问url地址-提供OpenAPI的文档
+        url: /iot-auth/v2/api-docs?group=default
+        service-name: iot-auth
+        # 路由前缀
+        # 兼容OpenAPI3规范在聚合时丢失contextPath属性的异常情况，由开发者自己配置contextPath,Knife4j的前端Ui做兼容处理,与url属性独立不冲突，仅OpenAPI3规范聚合需要，OpenAPI2规范不需要设置此属性,默认为(apiPathPrefix)
+        context-path: /
+        order: 2
+      - name: 代码生成
+        url: /iot-modules-gen/v2/api-docs?group=default
+        service-name: iot-modules-gen
+        # 路由前缀
+        context-path: /
+        order: 3
+      - name: 定时任务
+        url: /iot-modules-job/v2/api-docs?group=default
+        service-name: iot-modules-job
+        # 路由前缀
+        context-path: /
+        order: 4
+      - name: 系统模块
+        url: /iot-modules-system/v2/api-docs?group=default
+        service-name: iot-modules-system
+        # 路由前缀
+        context-path: /
+        order: 5
+      - name: 文件服务
+        url: /iot-modules-file/v2/api-docs?group=default
+        service-name: iot-modules-file
+        # 路由前缀
+        context-path: /
+        order: 6
+      - name: TDengine服务
+        url: /iot-modules-tdengine/v2/api-docs?group=default
+        service-name: iot-modules-tdengine
+        # 路由前缀
+        context-path: /
+        order: 7
+      - name: Link服务
+        url: /iot-modules-link/v2/api-docs?group=default
+        service-name: iot-modules-link
+        # 路由前缀
+        context-path: /
+        order: 8
+      - name: broker服务
+        url: /iot-modules-broker/v2/api-docs?group=default
+        service-name: iot-modules-broker
+        # 路由前缀
+        context-path: /
+        order: 9
+      - name: ProtocolAnalysis服务
+        url: /iot-modules-protocolAnalysis/v2/api-docs?group=default
+        service-name: iot-modules-protocolAnalysis
+        # 路由前缀
+        context-path: /
+        order: 10
+      - name: rule服务
+        url: /iot-modules-rule/v2/api-docs?group=default
+        service-name: iot-modules-rule
+        # 路由前缀
+        context-path: /
+        order: 11
+

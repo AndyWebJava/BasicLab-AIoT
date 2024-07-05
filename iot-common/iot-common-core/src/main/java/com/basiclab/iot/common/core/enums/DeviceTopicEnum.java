@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * @program: basiclabiot
  * @description: 设备Topic枚举
- * @packagename: com.basiclab.basiclabiot.common.core.enums
+ * @packagename: com.basiclab.iot.common.core.enums
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-08-26 10:49

@@ -1,8 +1,8 @@
 # iot-Node-RED
 
-https://www.mqttsnet.com/
+https://www.iot.com/
 
-操作说明：https://mqttsnet.yuque.com/gt6zkc/basiclabiot/lftzvi5sgwenrdoy
+操作说明：https://iot.yuque.com/gt6zkc/basiclabiot/lftzvi5sgwenrdoy
 
 1. Install the node-red dependencies
 

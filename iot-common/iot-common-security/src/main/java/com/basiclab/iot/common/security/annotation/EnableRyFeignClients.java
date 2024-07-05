@@ -17,7 +17,7 @@ public @interface EnableRyFeignClients
 {
     String[] value() default {};
 
-    String[] basePackages() default { "com.basiclab.basiclabiot" };
+    String[] basePackages() default { "com.basiclab.iot" };
 
     Class<?>[] basePackageClasses() default {};
 

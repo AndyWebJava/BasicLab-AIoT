@@ -26,7 +26,7 @@ import java.net.InetAddress;
 //若maxAge是负数,则代表为临时Cookie,不会被持久化,Cookie信息保存在浏览器内存中,浏览器关闭Cookie就消失
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Slf4j
-@SpringBootApplication(scanBasePackages = {"com.basiclab.basiclabiot"})
+@SpringBootApplication(scanBasePackages = {"com.basiclab.iot"})
 public class IoTLinkApplication {
 
     public static void main(String[] args) throws Exception {

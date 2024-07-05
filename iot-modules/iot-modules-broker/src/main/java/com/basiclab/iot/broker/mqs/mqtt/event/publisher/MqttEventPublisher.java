@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description: MQTT事件发布器 用于发布MQTT事件 TODO MqttEventEnum 事件枚举类 用于定义MQTT事件 预留
- * @packagename: com.basiclab.basiclabiot.consumer.mqtt.publisher
+ * @packagename: com.basiclab.iot.consumer.mqtt.publisher
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-28 00:07

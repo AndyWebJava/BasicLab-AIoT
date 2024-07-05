@@ -22,9 +22,9 @@ import java.util.List;
 /**
  * MqttBroker相关开放接口（anyTenant）
  *
- * @author mqttsnet
+ * @author iot
  * @date 2023-05-22
- * @create [2021-06-30] [mqttsnet]
+ * @create [2021-06-30] [iot]
  */
 @Slf4j
 @Validated

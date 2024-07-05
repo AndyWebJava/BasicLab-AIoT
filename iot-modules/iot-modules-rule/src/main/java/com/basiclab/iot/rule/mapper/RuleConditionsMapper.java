@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Param;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.rule.mapper
+ * @packagename: com.basiclab.iot.rule.mapper
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-21 18:50

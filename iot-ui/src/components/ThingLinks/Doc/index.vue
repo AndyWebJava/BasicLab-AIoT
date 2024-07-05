@@ -9,7 +9,7 @@ export default {
   name: 'basiclabiotDoc',
   data() {
     return {
-      url: 'http://doc.basiclabiot.mqttsnet.com'
+      url: 'http://doc.basiclabiot.iot.com'
     }
   },
   methods: {

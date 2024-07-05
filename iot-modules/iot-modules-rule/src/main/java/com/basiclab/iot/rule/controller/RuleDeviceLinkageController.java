@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @program: basiclabiot
  * @description: 设备联动Controller
- * @packagename: com.basiclab.basiclabiot.rule.controller
+ * @packagename: com.basiclab.iot.rule.controller
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-08-07 20:31

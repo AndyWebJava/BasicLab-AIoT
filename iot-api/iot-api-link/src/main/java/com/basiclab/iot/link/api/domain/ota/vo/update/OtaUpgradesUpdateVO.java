@@ -16,7 +16,7 @@ import java.io.Serializable;
  * OTA升级包
  * </p>
  *
- * @author mqttsnet
+ * @author iot
  * @date 2024-01-12 22:36:27
  */
 @Data

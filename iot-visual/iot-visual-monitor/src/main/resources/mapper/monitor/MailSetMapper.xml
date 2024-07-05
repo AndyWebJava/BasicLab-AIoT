@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.basiclab.basiclabiot.monitor.mapper.MailSetMapper">
-    <resultMap id="resultMap" type="com.basiclab.basiclabiot.monitor.api.domain.MailSet">
+<mapper namespace="com.basiclab.iot.monitor.mapper.MailSetMapper">
+    <resultMap id="resultMap" type="com.basiclab.iot.monitor.api.domain.MailSet">
         <id column="ID" property="id" jdbcType="CHAR"/>
         <result column="SEND_MAIL" property="sendMail" jdbcType="CHAR"/>
         <result column="FROM_MAIL_NAME" property="fromMailName" jdbcType="CHAR"/>
@@ -40,7 +40,7 @@
         </foreach>
     </delete>
 
-    <insert id="save" parameterType="com.basiclab.basiclabiot.monitor.api.domain.MailSet">
+    <insert id="save" parameterType="com.basiclab.iot.monitor.api.domain.MailSet">
         INSERT INTO MAIL_SET
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -120,7 +120,7 @@
         </trim>
     </insert>
 
-    <update id="updateById" parameterType="com.basiclab.basiclabiot.monitor.api.domain.MailSet">
+    <update id="updateById" parameterType="com.basiclab.iot.monitor.api.domain.MailSet">
         UPDATE MAIL_SET
         <set>
             <if test="fromMailName != null">
@@ -151,7 +151,7 @@
         WHERE ID = #{id}
     </update>
 
-    <select id="selectMailSetList" parameterType="com.basiclab.basiclabiot.monitor.api.domain.MailSet"
+    <select id="selectMailSetList" parameterType="com.basiclab.iot.monitor.api.domain.MailSet"
             resultMap="resultMap">
         SELECT
         <include refid="tableColumnList"/>

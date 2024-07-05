@@ -1,7 +1,7 @@
 package com.basiclab.iot.broker.mqs.mqtt.handler.factory;
 
 
-import com.basiclab.basic.protocol.factory.ProtocolMessageAdapter;
+import com.basiclab.iot.protocol.factory.ProtocolMessageAdapter;
 import com.basiclab.iot.broker.api.RemoteMqttBrokerOpenApi;
 import com.basiclab.iot.broker.api.domain.vo.PublishMessageRequestVO;
 import com.basiclab.iot.common.core.constant.CacheConstants;
@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: 通用逻辑处理器
- * @packagename: com.basiclab.basiclabiot.mqtt.handler
+ * @packagename: com.basiclab.iot.mqtt.handler
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-30 15:07

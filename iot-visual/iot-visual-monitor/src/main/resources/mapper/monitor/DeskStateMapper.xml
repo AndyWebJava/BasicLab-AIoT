@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.basiclab.basiclabiot.monitor.mapper.DeskStateMapper">
-    <resultMap id="resultMap" type="com.basiclab.basiclabiot.monitor.api.domain.DeskState">
+<mapper namespace="com.basiclab.iot.monitor.mapper.DeskStateMapper">
+    <resultMap id="resultMap" type="com.basiclab.iot.monitor.api.domain.DeskState">
         <id column="ID" property="id" jdbcType="CHAR"/>
         <result column="HOST_NAME" property="hostname" jdbcType="CHAR"/>
         <result column="FILE_STSTEM" property="fileSystem" jdbcType="CHAR"/>
@@ -77,7 +77,7 @@
         </foreach>
     </delete>
 
-    <insert id="save" parameterType="com.basiclab.basiclabiot.monitor.api.domain.DeskState">
+    <insert id="save" parameterType="com.basiclab.iot.monitor.api.domain.DeskState">
         INSERT INTO DESK_STATE
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">

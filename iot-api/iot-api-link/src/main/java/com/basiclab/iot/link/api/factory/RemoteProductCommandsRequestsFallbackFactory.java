@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * @program: basiclabiot
  * @description: 产品服务管理服务降级处理
- * @packagename: com.basiclab.basiclabiot.link.api.factory
+ * @packagename: com.basiclab.iot.link.api.factory
  * @author: kk
  * @date: 2022-11-19
  **/

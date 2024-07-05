@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: 超级表结构VO
- * @packagename: com.basiclab.basiclabiot.tds.vo.result
+ * @packagename: com.basiclab.iot.tds.vo.result
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-09-17 21:12

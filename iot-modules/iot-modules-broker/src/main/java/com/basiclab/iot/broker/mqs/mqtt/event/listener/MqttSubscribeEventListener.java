@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: MQTT SUBSCRIBE事件监听器
- * @packagename: com.basiclab.basiclabiot.mqtt.listener
+ * @packagename: com.basiclab.iot.mqtt.listener
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-28 00:46

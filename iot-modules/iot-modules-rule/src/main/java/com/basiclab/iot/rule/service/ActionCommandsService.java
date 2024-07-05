@@ -8,7 +8,7 @@ import com.basiclab.iot.rule.api.domain.model.ActionCommandsModel;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.rule.service.impl
+ * @packagename: com.basiclab.iot.rule.service.impl
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-12-04 21:39

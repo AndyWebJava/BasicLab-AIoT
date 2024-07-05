@@ -16,7 +16,7 @@ import java.util.Map;
  * 设备档案信息表
  * </p>
  *
- * @author mqttsnet
+ * @author iot
  * @date 2023-03-14 19:39:59
  */
 @Data

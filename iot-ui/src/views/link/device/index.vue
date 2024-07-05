@@ -40,7 +40,7 @@
           <span>二次开发：</span>
           <a href="#" style="color: #357df5; margin-right: 20px">下载Demo</a>
           <a
-            href="https://mqttsnet.yuque.com/gt6zkc/basiclabiot/"
+            href="https://iot.yuque.com/gt6zkc/basiclabiot/"
             style="color: #357df5"
             target="_blank"
           >开发文档</a

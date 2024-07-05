@@ -1,6 +1,7 @@
 package com.basiclab.iot.system.mapper;
 
 import com.basiclab.iot.system.api.domain.SysOperLog;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * 
  * @author BasicLab基础架构实验室
  */
+@Mapper
 public interface SysOperLogMapper
 {
     /**

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 /**
  * @program: basiclabiot
  * @description: MQTT协议Topo 状态枚举
- * @packagename: com.basiclab.basiclabiot.link.api.domain.device.enumeration
+ * @packagename: com.basiclab.iot.link.api.domain.device.enumeration
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-20 17:51

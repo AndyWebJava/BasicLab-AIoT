@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 /**
  * @program: basiclabiot
  * @description: MQTT系统Topic 处理工厂类
- * @packagename: com.basiclab.basiclabiot.handler.factory
+ * @packagename: com.basiclab.iot.handler.factory
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-05-05 22:00

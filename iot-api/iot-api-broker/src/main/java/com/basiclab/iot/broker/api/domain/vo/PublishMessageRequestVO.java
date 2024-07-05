@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @program: basiclabiot
  * @description: MQTT 发送消息VO
- * @packagename: com.basiclab.basiclabiot.broker.api.domain
+ * @packagename: com.basiclab.iot.broker.api.domain
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2024-01-20 19:11

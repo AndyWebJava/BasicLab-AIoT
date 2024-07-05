@@ -2,14 +2,14 @@
 FROM openjdk:8-jre
 
 # 维护者信息
-LABEL maintainer="mqttsnet mqttsnet@163.com"
+LABEL maintainer="iot iot@163.com"
 
 # 设置时区
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 创建工作目录
-WORKDIR /home/www/mqttsnet/iot-gateway
+WORKDIR /home/www/iot/iot-gateway
 
 # 从构建上下文（Dockerfile 所在目录的相对路径）复制 JAR 文件
 COPY target/iot-gateway.jar /app.jar

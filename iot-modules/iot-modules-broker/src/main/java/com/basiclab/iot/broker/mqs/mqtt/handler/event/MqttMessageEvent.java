@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * @program: basiclabiot
  * @description: MessageEvent
- * @packagename: com.basiclab.basiclabiot.mqtt.handle.event
+ * @packagename: com.basiclab.iot.mqtt.handle.event
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2023-04-28 14:42

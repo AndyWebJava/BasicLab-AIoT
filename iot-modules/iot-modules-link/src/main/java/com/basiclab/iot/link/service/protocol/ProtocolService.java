@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @program: basiclabiot
  * @description: ${description}
- * @packagename: com.basiclab.basiclabiot.link.service.protocol
+ * @packagename: com.basiclab.iot.link.service.protocol
  * @author: BasiclabIoT
  * @e-mainl: andywebjava@163.com
  * @date: 2022-07-01 17:56
