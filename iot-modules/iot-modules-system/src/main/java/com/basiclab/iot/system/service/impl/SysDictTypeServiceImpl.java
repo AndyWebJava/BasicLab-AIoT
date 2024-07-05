@@ -34,11 +34,11 @@ public class SysDictTypeServiceImpl implements ISysDictTypeService
     /**
      * 项目启动时，初始化字典到缓存
      */
-    @PostConstruct
-    public void init()
-    {
-        loadingDictCache();
-    }
+//    @PostConstruct
+//    public void init()
+//    {
+//        loadingDictCache();
+//    }
 
     /**
      * 根据条件分页查询字典类型
