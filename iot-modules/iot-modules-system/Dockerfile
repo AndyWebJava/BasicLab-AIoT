@@ -2,7 +2,7 @@
 FROM openjdk:8-jre
 
 # 维护者信息
-LABEL maintainer="leapfive leapfive.com"
+LABEL maintainer="basiclab basiclab.com"
 
 # 设置时区
 ENV TZ=Asia/Shanghai
@@ -10,7 +10,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 创建工作目录
 #WORKDIR /home/www/mqttsnet/iot-modules-system
-WORKDIR /home/leapfive/iot-modules-system
+WORKDIR /home/basiclab/iot-modules-system
 
 # 从构建上下文（Dockerfile 所在目录的相对路径）复制 JAR 文件
 #COPY target/iot-modules-system.jar /app.jar

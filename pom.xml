@@ -33,7 +33,7 @@
         <spring-boot-gateway.version>3.0.7</spring-boot-gateway.version>
         <alibaba.nacos.version>2.3.0</alibaba.nacos.version>
         <spring-boot-admin.version>2.7.10</spring-boot-admin.version>
-        <spring-boot.mybatis>2.2.0</spring-boot.mybatis>
+        <mybatis-plus-boot-starter.version>3.5.2</mybatis-plus-boot-starter.version>
         <swagger.fox.version>3.0.0</swagger.fox.version>
         <swagger.ui.version>2.9.2</swagger.ui.version>
         <swagger.core.version>1.6.2</swagger.core.version>
@@ -121,9 +121,9 @@
 
             <!-- Mybatis 依赖配置 -->
             <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${spring-boot.mybatis}</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
 
             <!-- Swagger 依赖配置 -->
