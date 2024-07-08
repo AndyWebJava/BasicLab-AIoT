@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.ota.OtaUpgradesMapper">
     <!-- 结果映射定义 -->
-    <resultMap id="OtaUpgradeResultMap" type="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgrades">
+    <resultMap id="OtaUpgradeResultMap" type="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgrades">
         <id column="id" property="id"/>
         <result column="app_id" property="appId"/>
         <result column="package_name" property="packageName"/>
@@ -25,7 +25,7 @@
         id, app_id, package_name, package_type, product_identification, version, file_location, status, description, custom_info, remark, created_by, created_time, updated_by, updated_time
     </sql>
 
-    <insert id="insertOtaUpgrades" parameterType="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgrades">
+    <insert id="insertOtaUpgrades" parameterType="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgrades">
         INSERT INTO ota_upgrades
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="appId != null and appId != ''">
@@ -117,7 +117,7 @@
     </delete>
 
     <!-- 更新操作 -->
-    <update id="updateOtaUpgradeById" parameterType="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgrades">
+    <update id="updateOtaUpgradeById" parameterType="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgrades">
         UPDATE ota_upgrades
         SET app_id                 = #{appId},
             package_name           = #{packageName},

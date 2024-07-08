@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.basiclab.iot.tdengine.mapper.IotSequentialMapper">
-    <resultMap id="map" type="domain.com.basiclab.iot.tdengine.api.IotSequential">
+    <resultMap id="map" type="com.basiclab.iot.tdengine.api.IotSequential">
         <id column="statetime" jdbcType="TIMESTAMP" property="statetime"/>
         <result column="endTime" jdbcType="TIMESTAMP" property="endtime"/>
         <result column="deviceid" jdbcType="VARCHAR" property="deviceid"/>
@@ -11,7 +11,7 @@
         <result column="devices" jdbcType="VARCHAR" property="devices"/>
     </resultMap>
 
-    <select id="getList" parameterType="domain.com.basiclab.iot.tdengine.api.IotSequential" resultMap="map">
+    <select id="getList" parameterType="com.basiclab.iot.tdengine.api.IotSequential" resultMap="map">
         select * from sequential
         <where>
             <if test="statetime != null and sequential != null">

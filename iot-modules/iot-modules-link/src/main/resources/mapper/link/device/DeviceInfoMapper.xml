@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.device.DeviceInfoMapper">
-    <resultMap id="BaseResultMap" type="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo">
         <!--@mbg.generated-->
         <!--@Table device_info-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -79,7 +79,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo"
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_info (d_id, app_id, node_id,
@@ -96,7 +96,7 @@
                 #{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo"
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_info
@@ -208,7 +208,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo">
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo">
         <!--@mbg.generated-->
         update device_info
         <set>
@@ -267,7 +267,7 @@
         where id = #{id,jdbcType=BIGINT}
     </update>
     <update id="updateByPrimaryKey"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo">
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo">
         <!--@mbg.generated-->
         update device_info
         set d_id              = #{did,jdbcType=BIGINT},
@@ -402,7 +402,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo"
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_info
@@ -476,7 +476,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo"
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_info
@@ -676,7 +676,7 @@
     </select>
 
     <select id="selectDeviceInfoList"
-            parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo"
+            parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo"
             resultMap="BaseResultMap">
         <include refid="selectDeviceInfoVo"/>
         <where>
@@ -724,7 +724,7 @@
         where id = #{id}
     </select>
 
-    <insert id="insertDeviceInfo" parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo"
+    <insert id="insertDeviceInfo" parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo"
             useGeneratedKeys="true" keyProperty="id">
         insert into device_info
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -835,7 +835,7 @@
         </trim>
     </insert>
 
-    <update id="updateDeviceInfo" parameterType="entity.deviceInfo.domain.com.basiclab.iot.link.api.DeviceInfo">
+    <update id="updateDeviceInfo" parameterType="com.basiclab.iot.link.api.domain.deviceInfo.entity.DeviceInfo">
         update device_info
         <trim prefix="SET" suffixOverrides=",">
             <if test="did != null">

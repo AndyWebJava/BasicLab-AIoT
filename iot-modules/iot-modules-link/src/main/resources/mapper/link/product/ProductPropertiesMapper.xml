@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.product.ProductPropertiesMapper">
-    <resultMap id="BaseResultMap" type="entity.product.domain.com.basiclab.iot.link.api.ProductProperties">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.product.entity.ProductProperties">
         <!--@mbg.generated-->
         <!--@Table product_properties-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -58,7 +58,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_properties ( property_code,
@@ -76,7 +76,7 @@
         #{updateBy,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_properties
@@ -188,7 +188,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties">
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties">
         <!--@mbg.generated-->
         update product_properties
         <set>
@@ -247,7 +247,7 @@
         where id = #{id,jdbcType=BIGINT}
     </update>
     <update id="updateByPrimaryKey"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties">
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties">
         <!--@mbg.generated-->
         update product_properties
         set
@@ -511,7 +511,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_properties
@@ -585,7 +585,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_properties
@@ -796,7 +796,7 @@
     </sql>
 
     <select id="selectProductPropertiesList"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties"
             resultMap="BaseResultMap">
         <include refid="selectProductPropertiesVo"/>
         <where>
@@ -848,7 +848,7 @@
     </select>
 
     <insert id="insertProductProperties"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties"
             useGeneratedKeys="true" keyProperty="id">
         insert into product_properties
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -960,7 +960,7 @@
     </insert>
 
     <update id="updateProductProperties"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductProperties">
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductProperties">
         update product_properties
         <trim prefix="SET" suffixOverrides=",">
             <if test="propertyCode != null">

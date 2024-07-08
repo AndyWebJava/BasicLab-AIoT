@@ -9,7 +9,7 @@
     </update>
 
     <update id="createSuperTableAndColumn"
-            parameterType="model.domain.com.basiclab.iot.tdengine.api.SuperTableDTO">
+            parameterType="model.com.basiclab.iot.tdengine.api.SuperTableDTO">
         create table if not exists #{dataBaseName}.#{superTableName}
         <foreach item="item" collection="schemaFields" separator=","
                  open="(" close=")" index="">
@@ -42,7 +42,7 @@
     </update>
 
 
-    <update id="createSubTable" parameterType="model.domain.com.basiclab.iot.tdengine.api.TableDTO">
+    <update id="createSubTable" parameterType="model.com.basiclab.iot.tdengine.api.TableDTO">
         create table if not exists #{dataBaseName}.#{tableName}
         using #{dataBaseName}.#{superTableName}
         tags
@@ -145,7 +145,7 @@
         </if>
     </delete>
 
-    <select id="describeSuperOrSubTable" resultType="domain.com.basiclab.iot.tdengine.api.SuperTableDescribeVO">
+    <select id="describeSuperOrSubTable" resultType="com.basiclab.iot.tdengine.api.SuperTableDescribeVO">
         DESCRIBE #{dataBaseName}.#{tableName};
     </select>
 
@@ -194,7 +194,7 @@
         </foreach>
     </insert>
 
-    <select id="getLastDataByTags" parameterType="model.domain.com.basiclab.iot.tdengine.api.TagsSelectDTO"
+    <select id="getLastDataByTags" parameterType="model.com.basiclab.iot.tdengine.api.TagsSelectDTO"
             resultType="Map">
         <!-- 判断startTime和endTime是否都存在 -->
         <choose>
@@ -229,7 +229,7 @@
         </choose>
     </select>
 
-    <select id="selectByTimestamp" parameterType="domain.com.basiclab.iot.tdengine.api.SelectDto"
+    <select id="selectByTimestamp" parameterType="com.basiclab.iot.tdengine.api.SelectDto"
             resultType="Map">
         select * from #{dataBaseName}.#{tableName}
         <!--查询这里不能使用#{}占位符的方式，使用这种方式，tdEngine不识别为列名，只能使用${}占位的方式-->
@@ -238,7 +238,7 @@
         between #{startTime} and #{endTime}
     </select>
 
-    <select id="getLastData" parameterType="domain.com.basiclab.iot.tdengine.api.SelectDto"
+    <select id="getLastData" parameterType="com.basiclab.iot.tdengine.api.SelectDto"
             resultType="Map">
         select last (*)
         from #{dataBaseName}.#{tableName}

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.ota.OtaUpgradeTasksMapper">
 
-    <resultMap id="OtaUpgradeTaskResultMap" type="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgradeTasks">
+    <resultMap id="OtaUpgradeTaskResultMap" type="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgradeTasks">
         <id column="id" property="id"/>
         <result column="upgrade_id" property="upgradeId"/>
         <result column="task_name" property="taskName"/>
@@ -20,7 +20,7 @@
         id, upgrade_id, task_name, task_status, scheduled_time, description, remark, created_by, created_time, updated_by, updated_time
     </sql>
 
-    <insert id="insertOtaUpgradeTask" parameterType="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgradeTasks">
+    <insert id="insertOtaUpgradeTask" parameterType="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgradeTasks">
         INSERT INTO ota_upgrade_tasks (upgrade_id, task_name, task_status, scheduled_time, description, remark, created_by, created_time, updated_by, updated_time)
         VALUES (#{upgradeId}, #{taskName}, #{taskStatus}, #{scheduledTime}, #{description}, #{remark}, #{createdBy}, now(), #{updatedBy}, now())
     </insert>
@@ -29,7 +29,7 @@
         DELETE FROM ota_upgrade_tasks WHERE id = #{id}
     </delete>
 
-    <update id="updateOtaUpgradeTaskById" parameterType="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgradeTasks">
+    <update id="updateOtaUpgradeTaskById" parameterType="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgradeTasks">
         UPDATE ota_upgrade_tasks
         SET upgrade_id = #{upgradeId},
             task_name = #{taskName},

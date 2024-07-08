@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.rule.mapper.RuleConditionsMapper">
-  <resultMap id="BaseResultMap" type="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <resultMap id="BaseResultMap" type="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     <!--@Table rule_conditions-->
     <id column="id" jdbcType="BIGINT" property="id" />
@@ -46,7 +46,7 @@
     delete from rule_conditions
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true" parameterType="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true" parameterType="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     insert into rule_conditions
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -126,7 +126,7 @@
               </if>
             </trim>
   </insert>
-  <insert id="insertSelective" keyColumn="id" keyProperty="id" useGeneratedKeys="true" parameterType="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" useGeneratedKeys="true" parameterType="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     insert into rule_conditions
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -212,7 +212,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <update id="updateByPrimaryKeySelective" parameterType="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     update rule_conditions
     <set>
@@ -255,7 +255,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <update id="updateByPrimaryKey" parameterType="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     update rule_conditions
     set rule_id = #{ruleId,jdbcType=BIGINT},
@@ -450,7 +450,7 @@
         )
     </foreach>
   </insert>
-  <insert id="insertOrUpdate" parameterType="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <insert id="insertOrUpdate" parameterType="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     insert into rule_conditions
     (id, rule_id, condition_type, device_identification, product_identification, service_id,
@@ -477,7 +477,7 @@
     update_by = #{updateBy,jdbcType=VARCHAR},
     update_time = #{updateTime,jdbcType=TIMESTAMP}
   </insert>
-  <insert id="insertOrUpdateSelective" parameterType="domain.com.basiclab.iot.rule.api.RuleConditions">
+  <insert id="insertOrUpdateSelective" parameterType="com.basiclab.iot.rule.api.RuleConditions">
     <!--@mbg.generated-->
     insert into rule_conditions
     <trim prefix="(" suffix=")" suffixOverrides=",">

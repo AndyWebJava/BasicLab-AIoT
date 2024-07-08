@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.protocol.ProtocolMapper">
-    <resultMap id="BaseResultMap" type="protocol.domain.com.basiclab.iot.link.api.Protocol">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.protocol.Protocol">
         <!--@mbg.generated-->
         <!--@Table protocol-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -56,7 +56,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into protocol (product_identification, app_id, protocol_name,
                               protocol_identification, protocol_version,
@@ -72,7 +72,7 @@
                 #{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into protocol
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -170,7 +170,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol">
+    <update id="updateByPrimaryKeySelective" parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol">
         <!--@mbg.generated-->
         update protocol
         <set>
@@ -225,7 +225,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol">
+    <update id="updateByPrimaryKey" parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol">
         <!--@mbg.generated-->
         update protocol
         set product_identification  = #{productIdentification,jdbcType=VARCHAR},
@@ -463,7 +463,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into protocol
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -530,7 +530,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into protocol
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -708,7 +708,7 @@
         from protocol
     </sql>
 
-    <select id="selectProtocolList" parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol"
+    <select id="selectProtocolList" parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol"
             resultMap="BaseResultMap">
         <include refid="selectProtocolVo"/>
         <where>
@@ -750,7 +750,7 @@
         where id = #{id}
     </select>
 
-    <insert id="insertProtocol" parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol"
+    <insert id="insertProtocol" parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol"
             useGeneratedKeys="true" keyProperty="id">
         insert into protocol
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -855,7 +855,7 @@
         </trim>
     </insert>
 
-    <update id="updateProtocol" parameterType="protocol.domain.com.basiclab.iot.link.api.Protocol">
+    <update id="updateProtocol" parameterType="com.basiclab.iot.link.api.domain.protocol.Protocol">
         update protocol
         <trim prefix="SET" suffixOverrides=",">
             <if test="productIdentification != null and productIdentification != ''">

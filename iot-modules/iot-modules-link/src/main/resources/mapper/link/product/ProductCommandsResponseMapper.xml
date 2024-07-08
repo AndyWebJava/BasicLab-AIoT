@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.product.ProductCommandsResponseMapper">
-    <resultMap id="BaseResultMap" type="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse">
         <!--@mbg.generated-->
         <!--@Table product_commands_response-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -56,7 +56,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_commands_response (commands_id, service_id, datatype,
@@ -73,7 +73,7 @@
         #{updateTime,jdbcType=TIMESTAMP})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_commands_response
@@ -179,7 +179,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse">
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse">
         <!--@mbg.generated-->
         update product_commands_response
         <set>
@@ -235,7 +235,7 @@
         where id = #{id,jdbcType=BIGINT}
     </update>
     <update id="updateByPrimaryKey"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse">
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse">
         <!--@mbg.generated-->
         update product_commands_response
         set commands_id = #{commandsId,jdbcType=BIGINT},
@@ -486,7 +486,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_commands_response
@@ -557,7 +557,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into product_commands_response
@@ -746,7 +746,7 @@
     </sql>
 
     <select id="selectProductCommandsResponseList"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse"
             resultMap="BaseResultMap">
         <include refid="selectProductCommandsResponseVo"/>
         <where>
@@ -795,7 +795,7 @@
     </select>
 
     <insert id="insertProductCommandsResponse"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse"
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse"
             useGeneratedKeys="true" keyProperty="id">
         insert into product_commands_response
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -901,7 +901,7 @@
     </insert>
 
     <update id="updateProductCommandsResponse"
-            parameterType="entity.product.domain.com.basiclab.iot.link.api.ProductCommandsResponse">
+            parameterType="com.basiclab.iot.link.api.domain.product.entity.ProductCommandsResponse">
         update product_commands_response
         <trim prefix="SET" suffixOverrides=",">
             <if test="serviceId != null">

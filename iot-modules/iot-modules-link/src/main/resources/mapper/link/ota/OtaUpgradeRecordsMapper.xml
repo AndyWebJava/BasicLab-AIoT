@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.ota.OtaUpgradeRecordsMapper">
 
-    <resultMap id="OtaUpgradeRecordsResultMap" type="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgradeRecords">
+    <resultMap id="OtaUpgradeRecordsResultMap" type="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgradeRecords">
         <id column="id" property="id"/>
         <result column="task_id" property="taskId"/>
         <result column="device_identification" property="deviceIdentification"/>
@@ -26,7 +26,7 @@
         id, task_id, device_identification, upgrade_status, progress, error_code, error_message, start_time, end_time, success_details, failure_details, log_details, remark, created_time, created_by, updated_by, updated_time
     </sql>
 
-    <insert id="insertOtaUpgradeRecords" parameterType="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgradeRecords">
+    <insert id="insertOtaUpgradeRecords" parameterType="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgradeRecords">
         INSERT INTO ota_upgrade_records
         (task_id, device_identification, upgrade_status, progress, error_code, error_message, start_time, end_time, success_details, failure_details, log_details, remark, created_time, created_by, updated_time, updated_by)
         VALUES
@@ -37,7 +37,7 @@
         DELETE FROM ota_upgrade_records WHERE id = #{id}
     </delete>
 
-    <update id="updateOtaUpgradeRecordsById" parameterType="entity.ota.domain.com.basiclab.iot.link.api.OtaUpgradeRecords">
+    <update id="updateOtaUpgradeRecordsById" parameterType="com.basiclab.iot.link.api.domain.ota.entity.OtaUpgradeRecords">
         UPDATE ota_upgrade_records
         SET task_id = #{taskId},
             device_identification = #{deviceIdentification},

@@ -3,7 +3,7 @@
 
 <mapper namespace="com.basiclab.iot.tdengine.mapper.WeatherMapper">
 
-    <resultMap id="BaseResultMap" type="domain.com.basiclab.iot.tdengine.api.Weather">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.tdengine.api.Weather">
         <id column="ts" jdbcType="TIMESTAMP" property="ts"/>
         <result column="temperature" jdbcType="FLOAT" property="temperature"/>
         <result column="humidity" jdbcType="FLOAT" property="humidity"/>
@@ -45,7 +45,7 @@
         ), groupId int)
     </update>
 
-    <update id="createTable" parameterType="domain.com.basiclab.iot.tdengine.api.Weather">
+    <update id="createTable" parameterType="com.basiclab.iot.tdengine.api.Weather">
         create table if not exists basiclabiot.t#{groupId} using basiclabiot.weather tags
         (
             #{location},
@@ -63,7 +63,7 @@
         </if>
     </select>
 
-    <insert id="insert" parameterType="domain.com.basiclab.iot.tdengine.api.Weather">
+    <insert id="insert" parameterType="com.basiclab.iot.tdengine.api.Weather">
         insert into basiclabiot.t#{groupId} (ts, temperature, humidity, note)
         values (#{ts}, ${temperature}, ${humidity}, #{note})
     </insert>
@@ -78,7 +78,7 @@
         from basiclabiot.weather
     </select>
 
-    <resultMap id="avgResultSet" type="domain.com.basiclab.iot.tdengine.api.Weather">
+    <resultMap id="avgResultSet" type="com.basiclab.iot.tdengine.api.Weather">
         <id column="ts" jdbcType="TIMESTAMP" property="ts"/>
         <result column="avg(temperature)" jdbcType="FLOAT" property="temperature"/>
         <result column="avg(humidity)" jdbcType="FLOAT" property="humidity"/>
