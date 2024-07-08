@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.device.DeviceMapper">
-    <resultMap id="BaseResultMap" type="entity.device.domain.com.basiclab.iot.link.api.Device">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.device.entity.Device">
         <!--@mbg.generated-->
         <!--@Table device-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -80,7 +80,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.Device" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.Device" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device (client_id, user_name, `password`,
                             app_id, auth_mode, device_identification,
@@ -105,7 +105,7 @@
                 #{updateBy,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.Device" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.Device" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -282,7 +282,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.Device">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.Device">
         <!--@mbg.generated-->
         update device
         <set>
@@ -373,7 +373,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="entity.device.domain.com.basiclab.iot.link.api.Device">
+    <update id="updateByPrimaryKey" parameterType="com.basiclab.iot.link.api.domain.device.entity.Device">
         <!--@mbg.generated-->
         update device
         set client_id              = #{clientId,jdbcType=VARCHAR},
@@ -792,7 +792,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.Device" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.Device" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -898,7 +898,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.Device" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.Device" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -1348,7 +1348,7 @@
         from device
     </sql>
 
-    <select id="selectDeviceList" parameterType="entity.device.domain.com.basiclab.iot.link.api.Device"
+    <select id="selectDeviceList" parameterType="com.basiclab.iot.link.api.domain.device.entity.Device"
             resultMap="BaseResultMap">
         <include refid="selectDeviceVo"/>
         <where>
@@ -1421,7 +1421,7 @@
         where id = #{id}
     </select>
 
-    <insert id="insertDevice" parameterType="entity.device.domain.com.basiclab.iot.link.api.Device"
+    <insert id="insertDevice" parameterType="com.basiclab.iot.link.api.domain.device.entity.Device"
             useGeneratedKeys="true" keyProperty="id">
         insert into device
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -1598,7 +1598,7 @@
         </trim>
     </insert>
 
-    <update id="updateDevice" parameterType="entity.device.domain.com.basiclab.iot.link.api.Device">
+    <update id="updateDevice" parameterType="com.basiclab.iot.link.api.domain.device.entity.Device">
         update device
         <trim prefix="SET" suffixOverrides=",">
             <if test="clientId != null and clientId != ''">

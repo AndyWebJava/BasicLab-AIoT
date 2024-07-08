@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.device.DeviceActionMapper">
-    <resultMap id="BaseResultMap" type="entity.device.domain.com.basiclab.iot.link.api.DeviceAction">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.device.entity.DeviceAction">
         <!--@mbg.generated-->
         <!--@Table device_action-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -11,7 +11,7 @@
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
     </resultMap>
     <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
-               type="entity.device.domain.com.basiclab.iot.link.api.DeviceAction">
+               type="com.basiclab.iot.link.api.domain.device.entity.DeviceAction">
         <!--@mbg.generated-->
         <!--@Table device_action-->
         <result column="message" jdbcType="LONGVARCHAR" property="message"/>
@@ -48,7 +48,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_action (device_identification, action_type,
                                    `status`, create_time, `message`)
@@ -56,7 +56,7 @@
                 #{status,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{message,jdbcType=LONGVARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_action
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -95,7 +95,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction">
         <!--@mbg.generated-->
         update device_action
         <set>
@@ -118,7 +118,7 @@
         where id = #{id,jdbcType=BIGINT}
     </update>
     <update id="updateByPrimaryKeyWithBLOBs"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction">
         <!--@mbg.generated-->
         update device_action
         set device_identification = #{deviceIdentification,jdbcType=VARCHAR},
@@ -128,7 +128,7 @@
             `message`             = #{message,jdbcType=LONGVARCHAR}
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction">
+    <update id="updateByPrimaryKey" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction">
         <!--@mbg.generated-->
         update device_action
         set device_identification = #{deviceIdentification,jdbcType=VARCHAR},
@@ -230,7 +230,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_action
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -267,7 +267,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateWithBLOBs" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_action
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -304,7 +304,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_action
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -371,7 +371,7 @@
         </trim>
     </insert>
     <select id="selectDeviceActionList"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction"
             resultMap="BaseResultMap">
         <include refid="selectDeviceActionVo"/>
         <where>
@@ -395,7 +395,7 @@
         where id = #{id}
     </select>
 
-    <insert id="insertDeviceAction" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction"
+    <insert id="insertDeviceAction" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction"
             useGeneratedKeys="true" keyProperty="id">
         insert into device_action
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -434,7 +434,7 @@
         </trim>
     </insert>
 
-    <update id="updateDeviceAction" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceAction">
+    <update id="updateDeviceAction" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceAction">
         update device_action
         <trim prefix="SET" suffixOverrides=",">
             <if test="deviceIdentification != null">

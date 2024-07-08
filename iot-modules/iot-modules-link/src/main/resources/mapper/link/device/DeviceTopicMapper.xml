@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.device.DeviceTopicMapper">
-    <resultMap id="BaseResultMap" type="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic">
         <!--@mbg.generated-->
         <!--@Table device_topic-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -59,7 +59,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_topic (device_identification, `type`, topic,
                                   publisher, subscriber, create_by,
@@ -71,7 +71,7 @@
                 #{remark,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_topic
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -140,7 +140,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic">
         <!--@mbg.generated-->
         update device_topic
         <set>
@@ -177,7 +177,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic">
+    <update id="updateByPrimaryKey" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic">
         <!--@mbg.generated-->
         update device_topic
         set device_identification = #{deviceIdentification,jdbcType=VARCHAR},
@@ -348,7 +348,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_topic
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -400,7 +400,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_topic
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -511,7 +511,7 @@
             </if>
         </trim>
     </insert>
-    <select id="selectDeviceTopicList" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic"
+    <select id="selectDeviceTopicList" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic"
             resultMap="BaseResultMap">
         <include refid="selectDeviceTopicVo"/>
         <where>
@@ -538,7 +538,7 @@
         where id = #{id}
     </select>
 
-    <insert id="insertDeviceTopic" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic"
+    <insert id="insertDeviceTopic" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic"
             useGeneratedKeys="true" keyProperty="id">
         insert into device_topic
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -607,7 +607,7 @@
         </trim>
     </insert>
 
-    <update id="updateDeviceTopic" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceTopic">
+    <update id="updateDeviceTopic" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceTopic">
         update device_topic
         <trim prefix="SET" suffixOverrides=",">
             <if test="deviceIdentification != null and deviceIdentification != ''">

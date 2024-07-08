@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.device.DeviceLocationMapper">
-    <resultMap id="BaseResultMap" type="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation">
         <!--@mbg.generated-->
         <!--@Table device_location-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -52,7 +52,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_location (device_identification, latitude, longitude,
@@ -65,7 +65,7 @@
                 #{updateBy,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_location
@@ -147,7 +147,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation">
         <!--@mbg.generated-->
         update device_location
         <set>
@@ -191,7 +191,7 @@
         where id = #{id,jdbcType=BIGINT}
     </update>
     <update id="updateByPrimaryKey"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation">
         <!--@mbg.generated-->
         update device_location
         set device_identification = #{deviceIdentification,jdbcType=VARCHAR},
@@ -295,7 +295,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_location
@@ -354,7 +354,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation"
             useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_location
@@ -503,7 +503,7 @@
     </sql>
 
     <select id="selectDeviceLocationList"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation"
             resultMap="BaseResultMap">
         <include refid="selectDeviceLocationVo"/>
         <where>
@@ -537,7 +537,7 @@
     </select>
 
     <insert id="insertDeviceLocation"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation" useGeneratedKeys="true"
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation" useGeneratedKeys="true"
             keyProperty="id">
         insert into device_location
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -619,7 +619,7 @@
     </insert>
 
     <update id="updateDeviceLocation"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceLocation">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceLocation">
         update device_location
         <trim prefix="SET" suffixOverrides=",">
             <if test="deviceIdentification != null and deviceIdentification != ''">

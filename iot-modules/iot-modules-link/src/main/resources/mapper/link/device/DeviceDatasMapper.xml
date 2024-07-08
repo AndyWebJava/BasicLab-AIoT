@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.basiclab.iot.link.mapper.device.DeviceDatasMapper">
-    <resultMap id="BaseResultMap" type="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas">
+    <resultMap id="BaseResultMap" type="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas">
         <!--@mbg.generated-->
         <!--@Table device_datas-->
         <id column="id" jdbcType="BIGINT" property="id"/>
@@ -40,7 +40,7 @@
         where id = #{id,jdbcType=BIGINT}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_datas (device_identification, protocol_type,
                                   message_id, topic, message,
@@ -50,7 +50,7 @@
                 #{status,jdbcType=VARCHAR}, #{reportTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP})
     </insert>
     <insert id="insertSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_datas
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -106,7 +106,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas">
+    <update id="updateByPrimaryKeySelective" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas">
         <!--@mbg.generated-->
         update device_datas
         <set>
@@ -137,7 +137,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas">
+    <update id="updateByPrimaryKey" parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas">
         <!--@mbg.generated-->
         update device_datas
         set device_identification = #{deviceIdentification,jdbcType=VARCHAR},
@@ -280,7 +280,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_datas
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -326,7 +326,7 @@
         </trim>
     </insert>
     <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id"
-            parameterType="entity.device.domain.com.basiclab.iot.link.api.DeviceDatas" useGeneratedKeys="true">
+            parameterType="com.basiclab.iot.link.api.domain.device.entity.DeviceDatas" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into device_datas
         <trim prefix="(" suffix=")" suffixOverrides=",">
