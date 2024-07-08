@@ -1,6 +1,6 @@
 # BasicLabIoT物联网平台
 <div align="center">
-    <img src="doc/images/BasicLabLogo.png" width="50%" height="50%" alt="BasicLabLogo">
+    <img src=".image/BasicLabLogo.png" width="50%" height="50%" alt="BasicLabLogo">
 </div>
 
 <div align="center">
@@ -11,11 +11,11 @@
 </div>
 
 ### BasicLabIoT架构图
-![BasicLabIoT物联网平台架构.jpg](doc/images/BasicLabIoT物联网平台架构.jpg)
-![BasicLabIoT物联网平台设备接入流程.jpg](doc/images/BasicLabIoT物联网平台设备接入流程.jpg)
+![BasicLabIoT物联网平台架构.jpg](.image/BasicLabIoT物联网平台架构.jpg)
+![BasicLabIoT物联网平台设备接入流程.jpg](.image/BasicLabIoT物联网平台设备接入流程.jpg)
 
 ### BasicLab全产品体系层次架构图
-![BasicLab全产品体系层次架构图.jpg](doc/images/BasicLab全产品体系层次架构图.jpg)
+![BasicLab全产品体系层次架构图.jpg](.image/BasicLab全产品体系层次架构图.jpg)
 
 ## Introduction
 
@@ -56,7 +56,7 @@ BasicLabIoT Platform is one of the many products in the BasicLab Infrastructure 
 ##Documents and Support
 ###The document contains detailed development guides, API documentation, and deployment tutorials
 ###Source code for streaming media and rule engine function modules. After joining the planet for three days, please contact me and invite you to join the group to obtain the source code for this part (if you are not satisfied with the planet within three days, you can get a refund, and you can also pay for documents for three days in vain)
-![img.png](doc/images/知识星球.png)
+![img.png](.image/知识星球.png)
 
 ## issues(Welcome everyone to provide valuable feedback)
 [issues](https://github.com/AndyWebJava/basiclab-iot/issues)

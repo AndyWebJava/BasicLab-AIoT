@@ -1,0 +1,246 @@
+version: '3.5'
+
+# 网络配置
+networks:
+  backend:
+    driver: bridge
+
+# 作者及社区信息
+x-metadata-config: &metadata-config
+  maintainer: "iot@163.com"
+  community: "iot"
+  copyright: "Copyright © 2023 iot"
+
+# 共享环境配置
+x-env-config: &env-config
+  TZ: Asia/Shanghai
+  SPRING_PROFILES_ACTIVE: test
+  NACOS_IP: 127.0.0.1
+  NACOS_PORT: 18848
+  NACOS_NAMESPACE: c0858b2e-960e-47b9-9b2d-17294dda787c
+  NACOS_USERNAME: iot-test
+  NACOS_PASSWORD: 12345678
+
+# 共享卷和网络配置
+x-shared-config: &shared-config
+  environment:
+    - TZ=Asia/Shanghai
+  volumes:
+    - /data01/iot/basiclabiot:/home/www/iot
+    - /etc/timezone:/etc/timezone
+    - /etc/localtime:/etc/localtime
+  restart: always
+  networks:
+    - backend
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+# 服务定义
+services:
+  iot-auth:
+    container_name: iot-auth
+    build:
+      context: ../../iot-auth
+      dockerfile: ../../iot-auth/Dockerfile
+    ports:
+      - "19200:19200" # 映射端口
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19200
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19200/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-gateway:
+    container_name: iot-gateway
+    build:
+      context: ../../iot-gateway
+      dockerfile: ../../iot-gateway/Dockerfile
+    ports:
+      - "19100:19100"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19100
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19100/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-broker:
+    container_name: iot-modules-broker
+    build:
+      context: ../../iot-modules/iot-modules-broker
+      dockerfile: ../../iot-modules/iot-modules-broker/Dockerfile
+    ports:
+      - "19306:19306"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19306
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19306/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-file:
+    container_name: iot-modules-file
+    build:
+      context: ../../iot-modules/iot-modules-file
+      dockerfile: ../../iot-modules/iot-modules-file/Dockerfile
+    ports:
+      - "19300:19300"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19300
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19300/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-gen:
+    container_name: iot-modules-gen
+    build:
+      context: ../../iot-modules/iot-modules-gen
+      dockerfile: ../../iot-modules/iot-modules-gen/Dockerfile
+    ports:
+      - "19301:19301"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19301
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19301/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-job:
+    container_name: iot-modules-job
+    build:
+      context: ../../iot-modules/iot-modules-job
+      dockerfile: ../../iot-modules/iot-modules-job/Dockerfile
+    ports:
+      - "19302:19302"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19302
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19302/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-link:
+    container_name: iot-modules-link
+    build:
+      context: ../../iot-modules/iot-modules-link
+      dockerfile: ../../iot-modules/iot-modules-link/Dockerfile
+    ports:
+      - "19305:19305"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19305
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19305/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-protocolAnalysis:
+    container_name: iot-modules-protocolAnalysis
+    build:
+      context: ../../iot-modules/iot-modules-protocolAnalysis
+      dockerfile: ../../iot-modules/iot-modules-protocolAnalysis/Dockerfile
+    ports:
+      - "19307:19307"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19307
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19307/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-rule:
+    container_name: iot-modules-rule
+    build:
+      context: ../../iot-modules/iot-modules-rule
+      dockerfile: ../../iot-modules/iot-modules-rule/Dockerfile
+    ports:
+      - "19308:19308"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19308
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19308/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-system:
+    container_name: iot-modules-system
+    build:
+      context: ../../iot-modules/iot-modules-system
+      dockerfile: ../../iot-modules/iot-modules-system/Dockerfile
+    ports:
+      - "19303:19303"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19303
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19303/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-tdengine:
+    container_name: iot-modules-tdengine
+    build:
+      context: ../../iot-modules/iot-modules-tdengine
+      dockerfile: ../../iot-modules/iot-modules-tdengine/Dockerfile
+    ports:
+      - "19304:19304"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19304
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19304/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义
+  iot-monitor:
+    container_name: iot-visual-monitor
+    build:
+      context: ../../iot-visual/iot-visual-monitor
+      dockerfile: ../../iot-visual/iot-visual-monitor/Dockerfile
+    ports:
+      - "19400:19400"
+    environment:
+      <<: *env-config
+      SERVICE_PORT: 19400
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:19400/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    <<: *shared-config  # 只引用 shared-config，因为 metadata-config 不应用于服务定义

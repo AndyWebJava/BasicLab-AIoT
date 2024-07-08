@@ -1,28 +1,31 @@
-<template>
-  <div id="app">
-    <router-view />
-  </div>
-</template>
+<script lang="ts" setup>
+import 'dayjs/locale/zh-cn'
 
-<script>
-export default {
-  name: 'App',
-  metaInfo() {
-    return {
-      title: this.$store.state.settings.dynamicTitle && this.$store.state.settings.title,
-      titleTemplate: title => {
-        return title ? `${title} - ${process.env.VUE_APP_TITLE}` : process.env.VUE_APP_TITLE
-      }
-    }
-  }
-}
+import { App, ConfigProvider } from 'ant-design-vue'
+import { storeToRefs } from 'pinia'
+
+import { computed } from 'vue'
+import { AppProvider } from '@/components/Application'
+import { useTitle } from '@/hooks/web/useTitle'
+import { useLocale } from '@/locales/useLocale'
+import { useAppStore } from '@/store/modules/app'
+
+// support Multi-language
+const { getAntdLocale } = useLocale()
+const appStore = useAppStore()
+const { themeConfig } = storeToRefs(appStore)
+
+const componentSize = computed(() => appStore.getComponentSize)
+// Listening to page changes and dynamically changing site titles
+useTitle()
 </script>
-<style>
-body {
-  margin: 0;
-}
 
-#app {
-  background: white;
-}
-</style>
+<template>
+  <ConfigProvider :locale="getAntdLocale" :theme="themeConfig" :component-size="componentSize">
+    <App class="h-full w-full">
+      <AppProvider>
+        <RouterView />
+      </AppProvider>
+    </App>
+  </ConfigProvider>
+</template>
