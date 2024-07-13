@@ -149,7 +149,7 @@ export const formSchema: FormSchema[] = [
   {
     label: '模板内容',
     field: 'content',
-    component: 'Editor',
+    component: 'Input',
     required: true,
     helpMessage: '{}括号中的内容作为模板参数',
   },
@@ -181,7 +181,7 @@ export const baseSendSchemas: FormSchema[] = [
   },
   {
     field: 'content',
-    component: 'Editor',
+    component: 'Input',
     label: '模板内容 ',
     required: false,
     defaultValue: '',

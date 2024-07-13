@@ -6,7 +6,7 @@ export default {
   // 表格配置
   table: {
     // 表格接口请求通用配置，可在组件prop覆盖
-    // 支持 xxx.xxx.xxx格式
+    // 支持 device.device.xxx格式
     fetchSetting: {
       // 传给后台的当前页字段
       pageField: 'pageNo',

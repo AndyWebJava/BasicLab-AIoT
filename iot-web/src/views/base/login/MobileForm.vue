@@ -36,7 +36,7 @@ const verify = ref()
 const captchaType = ref('blockPuzzle') // blockPuzzle 滑块 clickWord 点击文字
 
 const formData = reactive({
-  tenantName: '芋道源码',
+  tenantName: 'BasicLab-IoT',
   mobile: '',
   mobileCode: '',
   captchaVerification: '',

@@ -1,0 +1,2 @@
+com.basiclab.iot.framework.env.config.YudaoEnvWebAutoConfiguration
+com.basiclab.iot.framework.env.config.YudaoEnvRpcAutoConfiguration

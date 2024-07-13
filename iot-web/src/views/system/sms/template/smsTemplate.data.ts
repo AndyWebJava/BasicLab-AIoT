@@ -178,7 +178,7 @@ export const keyPrefix = 'key$-'
 export const baseSendSchemas: FormSchema[] = [
   {
     field: 'content',
-    component: 'Editor',
+    component: 'Input',
     label: '模板内容 ',
     required: false,
     defaultValue: '',

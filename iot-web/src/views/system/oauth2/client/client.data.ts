@@ -124,7 +124,7 @@ export const formSchema: FormSchema[] = [
   {
     label: '应用描述',
     field: 'description',
-    component: 'InputTextArea',
+    component: 'Input',
   },
   {
     label: '状态',

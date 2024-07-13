@@ -194,7 +194,6 @@ export const usePermissionStore = defineStore('app-permission', {
           menuList.sort((a, b) => {
             return (a.meta?.orderNo || 0) - (b.meta?.orderNo || 0)
           })
-
           // 设置菜单列表
           this.setFrontMenuList(menuList)
 
@@ -233,6 +232,7 @@ export const usePermissionStore = defineStore('app-permission', {
           routeList = filter(routeList, routeRemoveIgnoreFilter)
           routeList = routeList.filter(routeRemoveIgnoreFilter)
           routeList = flatMultiLevelRoutes(routeList)
+          console.log('routeList---', routeList);
           routes = [PAGE_NOT_FOUND_ROUTE, dashboard, ...routeList, about]
           break
       }

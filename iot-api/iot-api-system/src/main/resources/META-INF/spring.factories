@@ -1,4 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.basiclab.iot.system.api.factory.RemoteUserFallbackFactory,\
-  com.basiclab.iot.system.api.factory.RemoteLogFallbackFactory, \
-  com.basiclab.iot.system.api.factory.RemoteFileFallbackFactory

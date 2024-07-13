@@ -1,12 +1,11 @@
 <script lang="ts" setup>
 import { columns, searchFormSchema } from './message.data'
 import { IconEnum } from '@/enums/appEnum'
-import { useI18n } from '@/hooks/web/useI18n'
 import { BasicTable, TableAction, useTable } from '@/components/Table'
+import { useI18n } from '@/hooks/web/useI18n'
 import { getNotifyMessagePage } from '@/api/system/notify/message'
 import MessageInfoModal from '@/views/system/notify/components/MessageInfoModal.vue'
 import { useModal } from '@/components/Modal'
-import { DocAlert } from '@/components/DocAlert'
 
 defineOptions({ name: 'SystemMessage' })
 
@@ -37,8 +36,6 @@ function handleShowInfo(record: Recordable) {
 
 <template>
   <div>
-    <DocAlert title="站内信配置" url="https://doc.iocoder.cn/notify/" />
-
     <BasicTable @register="registerTable">
       <template #bodyCell="{ column, record }">
         <template v-if="column.key === 'action'">

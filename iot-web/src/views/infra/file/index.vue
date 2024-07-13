@@ -4,13 +4,12 @@ import { columns, searchFormSchema } from './file.data'
 import { useI18n } from '@/hooks/web/useI18n'
 import { useMessage } from '@/hooks/web/useMessage'
 import { IconEnum } from '@/enums/appEnum'
-import { BasicUpload } from '@/components/Upload'
 import { BasicTable, TableAction, useTable } from '@/components/Table'
+import { BasicUpload } from '@/components/Upload'
 import { deleteFile, getFilePage } from '@/api/infra/file'
 import { getAccessToken, getTenantId } from '@/utils/auth'
 import { copyText } from '@/utils/copyTextToClipboard'
 import { uploadApi } from '@/api/base/upload'
-import { DocAlert } from '@/components/DocAlert'
 
 defineOptions({ name: 'InfraFile' })
 
@@ -55,8 +54,6 @@ async function handleDelete(record: Recordable) {
 
 <template>
   <div>
-    <DocAlert title="上传下载" url="https://doc.iocoder.cn/file/" />
-
     <BasicTable @register="registerTable">
       <template #toolbar>
         <BasicUpload

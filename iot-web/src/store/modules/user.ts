@@ -148,7 +148,9 @@ export const useUserStore = defineStore('app-user', {
             try {
               router.addRoute(route as unknown as RouteRecordRaw)
             }
-            catch (e) {}
+            catch (e) {
+              console.error(e)
+            }
           })
           router.addRoute(PAGE_NOT_FOUND_ROUTE as unknown as RouteRecordRaw)
           permissionStore.setDynamicAddedRoute(true)

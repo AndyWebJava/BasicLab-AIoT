@@ -1,0 +1,3 @@
+com.basiclab.iot.framework.datasource.config.YudaoDataSourceAutoConfiguration
+com.basiclab.iot.framework.mybatis.config.YudaoMybatisAutoConfiguration
+com.basiclab.iot.framework.translate.config.YudaoTranslateAutoConfiguration

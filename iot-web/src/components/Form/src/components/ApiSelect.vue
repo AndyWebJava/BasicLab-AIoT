@@ -23,7 +23,7 @@ const props = defineProps({
   },
   // api params
   params: propTypes.any.def({}),
-  // support xxx.xxx.xx
+  // support device.device.xx
   resultField: propTypes.string.def(''),
   labelField: propTypes.string.def('label'),
   valueField: propTypes.string.def('value'),

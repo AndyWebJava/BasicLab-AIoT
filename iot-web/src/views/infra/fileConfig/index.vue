@@ -7,7 +7,6 @@ import { useModal } from '@/components/Modal'
 import { IconEnum } from '@/enums/appEnum'
 import { BasicTable, TableAction, useTable } from '@/components/Table'
 import { deleteFileConfig, getFileConfigPage, testFileConfig, updateFileConfigMaster } from '@/api/infra/fileConfig'
-import { DocAlert } from '@/components/DocAlert'
 
 defineOptions({ name: 'InfraFileConfig' })
 
@@ -66,8 +65,6 @@ async function handleDelete(record: Recordable) {
 
 <template>
   <div>
-    <DocAlert title="上传下载" url="https://doc.iocoder.cn/file/" />
-
     <BasicTable @register="registerTable">
       <template #toolbar>
         <a-button v-auth="['infra:file-config:create']" type="primary" :pre-icon="IconEnum.ADD" @click="handleCreate">

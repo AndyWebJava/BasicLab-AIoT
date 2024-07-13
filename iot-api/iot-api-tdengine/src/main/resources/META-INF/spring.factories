@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.basiclab.iot.tdengine.api.factory.RemoteTdEngineFallbackFactory

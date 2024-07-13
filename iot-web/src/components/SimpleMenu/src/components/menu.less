@@ -98,8 +98,19 @@
       background-color: #fff;
 
       .@{menu-prefix-cls}-submenu-active {
+
         &-border {
           .light-border();
+        }
+      }
+
+      .@{menu-prefix-cls}-item-selected {
+        background-color: fade(#009688, 90%);
+        color: #ffffff;
+
+        &:hover {
+          background-color: #009688;
+          color: #000000;
         }
       }
     }

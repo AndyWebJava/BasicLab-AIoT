@@ -179,7 +179,7 @@ export const baseComponents: IVFormComponent[] = [
   },
 
   {
-    component: 'Radio',
+    component: 'Select',
     label: '单选框',
     icon: 'ant-design:check-circle-outlined',
     field: '',

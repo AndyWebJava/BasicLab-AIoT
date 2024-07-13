@@ -28,6 +28,7 @@ function asyncImportRoute(routes: AppRouteRecordRaw[] | undefined) {
     const { children } = item
     if (component) {
       const layoutFound = LayoutMap.get(component.toUpperCase())
+      console.log('layoutFound---', layoutFound)
       if (layoutFound)
         item.component = layoutFound
       else

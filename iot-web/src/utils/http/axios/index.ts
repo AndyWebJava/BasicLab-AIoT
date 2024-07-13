@@ -323,7 +323,7 @@ export const defHttp = createAxios()
 // other api url
 // export const otherHttp = createAxios({
 //   requestOptions: {
-//     apiUrl: 'xxx',
-//     urlPrefix: 'xxx',
+//     apiUrl: 'device',
+//     urlPrefix: 'device',
 //   },
 // });

@@ -10,7 +10,6 @@ import { BasicTable, TableAction, useTable } from '@/components/Table'
 import type { JobExportReqVO } from '@/api/infra/job'
 import { deleteJob, exportJob, getJobPage, runJob, updateJobStatus } from '@/api/infra/job'
 import { InfraJobStatusEnum } from '@/enums/systemEnum'
-import { DocAlert } from '@/components/DocAlert'
 
 defineOptions({ name: 'InfraJob' })
 
@@ -102,10 +101,6 @@ async function handleDelete(record: Recordable) {
 
 <template>
   <div>
-    <DocAlert title="定时任务" url="https://doc.iocoder.cn/job/" />
-    <DocAlert title="异步任务" url="https://doc.iocoder.cn/async-task/" />
-    <DocAlert title="消息队列" url="https://doc.iocoder.cn/message-queue/" />
-
     <BasicTable @register="registerTable">
       <template #toolbar>
         <a-button v-auth="['infra:job:create']" type="primary" :pre-icon="IconEnum.ADD" @click="handleCreate">
